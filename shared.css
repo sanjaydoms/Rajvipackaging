@@ -4052,9 +4052,7 @@ footer {
   display: grid;
   grid-template-columns: 1.6fr 1fr 1fr 1fr;
   gap: 0;
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: 32px 60px 26px;
+  padding: 32px 52px 26px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08)
 }
 
@@ -4179,8 +4177,6 @@ footer {
 .footer-v2-contact-bar {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  max-width: var(--max-w);
-  margin: 0 auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08)
 }
 
@@ -4188,7 +4184,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 16px 64px;
+  padding: 16px 52px;
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
   font-weight: 400;
@@ -4226,9 +4222,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: 12px 64px
+  padding: 12px 52px
 }
 
 .footer-v2-copy {
