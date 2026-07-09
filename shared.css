@@ -2302,7 +2302,7 @@ nav a.active {
 .about-inner {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 52px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
@@ -2541,7 +2541,7 @@ nav a.active {
 .products-inner {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 52px;
   position: relative;
   z-index: 1
 }
@@ -2809,7 +2809,7 @@ nav a.active {
 .solutions-inner {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 52px;
   position: relative;
   z-index: 1
 }
@@ -3036,7 +3036,7 @@ nav a.active {
 .reviews-inner {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 52px;
   position: relative;
   z-index: 1
 }
@@ -3188,7 +3188,7 @@ nav a.active {
 .standards-inner {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 52px;
   position: relative;
   z-index: 1
 }
@@ -3344,7 +3344,7 @@ nav a.active {
 .contact-inner {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 48px;
+  padding: 0 52px;
   display: grid;
   grid-template-columns: 1fr 1.4fr;
   gap: 48px;
@@ -3707,7 +3707,7 @@ nav a.active {
 .blogs-inner {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 52px;
   position: relative;
   z-index: 1
 }
@@ -6199,9 +6199,7 @@ footer {
 .products-grid-4col {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
-  background: rgba(10, 61, 44, 0.1);
-  border: 1px solid rgba(10, 61, 44, 0.12);
+  gap: 24px;
   margin-bottom: 36px;
 }
 
@@ -6210,15 +6208,16 @@ footer {
   cursor: pointer;
   overflow: hidden;
   position: relative;
-  transition: background 0.3s, border-color 0.3s;
-  border: 1px solid transparent;
+  transition: transform 0.35s cubic-bezier(.4, 0, .2, 1), box-shadow 0.35s, border-color 0.35s;
+  border: 1px solid var(--border);
   text-decoration: none;
   display: block;
 }
 
 .prod-grid-card:hover {
-  background: var(--bg);
-  border-color: rgba(201, 150, 10, 0.35);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(10, 61, 44, 0.12);
+  border-color: rgba(201, 150, 10, 0.4);
   z-index: 1;
 }
 
@@ -6251,15 +6250,15 @@ footer {
 }
 
 .prod-grid-card-body {
-  padding: 18px 20px 22px;
+  padding: 22px 24px 26px;
 }
 
 .prod-grid-card-name {
   font-family: 'Sora', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--g1);
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   letter-spacing: -0.01em;
 }
 
@@ -6269,7 +6268,7 @@ footer {
   color: var(--muted);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .prod-grid-card-arrow {
@@ -6362,7 +6361,7 @@ footer {
 .contact-info-only {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 52px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
