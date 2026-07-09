@@ -291,7 +291,6 @@ function renderHomepageBlogs() {
       <div class="blog-card-body">
         <div class="blog-card-date">${b.category} &nbsp;·&nbsp; ${b.readTime}</div>
         <h3 class="blog-card-title">${b.title}</h3>
-        <p class="blog-card-desc">${b.desc}</p>
         <a class="blog-read-more" href="pages/blogs.html">Read Article <span class="blog-arrow">→</span></a>
       </div>
     </article>

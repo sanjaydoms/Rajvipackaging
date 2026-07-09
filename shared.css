@@ -3808,14 +3808,7 @@ nav a.active {
   font-weight: 700;
   color: var(--white);
   line-height: 1.4;
-  letter-spacing: -0.01em
-}
-
-.blog-card-desc {
-  font-size: 13px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.45);
-  font-weight: 400;
+  letter-spacing: -0.01em;
   flex: 1
 }
 
@@ -6180,10 +6173,6 @@ footer {
 
 .blog-card-title {
   color: var(--g1) !important;
-}
-
-.blog-card-desc {
-  color: var(--sub) !important;
 }
 
 .blog-read-more {
