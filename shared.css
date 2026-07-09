@@ -4139,6 +4139,7 @@ footer {
 .footer-v2-links {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   gap: 0
 }
 
