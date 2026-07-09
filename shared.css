@@ -6410,7 +6410,8 @@ footer {
 .contact-info-map-col {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100% + 160px);
+  margin: -80px 0;
 }
 
 .contact-info-cards {
@@ -6940,6 +6941,15 @@ footer {
     grid-template-columns: 1fr;
     gap: 32px;
     padding: 0 30px;
+  }
+
+  .contact-info-map-col {
+    height: auto;
+    margin: 0;
+  }
+
+  .contact-info-map-embed {
+    min-height: 280px;
   }
 
   #page-blogs-all .blogs-all-grid {
