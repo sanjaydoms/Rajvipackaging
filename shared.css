@@ -4119,7 +4119,7 @@ footer {
 /* NAV COLS */
 .footer-v2-col {
   padding: 0 24px;
-  text-align: center;
+  text-align: left;
 }
 
 .footer-v2-col-title {
@@ -4145,7 +4145,7 @@ footer {
 .footer-v2-links a {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -8032,14 +8032,14 @@ footer {
   display: flex !important;
   flex-direction: column !important;
   gap: 0 !important;
-  text-align: center !important;
+  text-align: left !important;
 }
 
 /* Nav column links â€” matches .footer-v2-links a */
 .fp-footer-col-links a {
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   font-family: 'Poppins', sans-serif !important;
   font-size: 12px !important;
   font-weight: 400 !important;
@@ -8079,7 +8079,7 @@ footer {
 .fp-footer-col-links+.fp-footer-col-title,
 .fp-footer-grid>*:not(:first-child) {
   padding: 0 24px;
-  text-align: center;
+  text-align: left;
 }
 
 /* INNER PAGES FOOTER â€” RESPONSIVE: 1024px */
