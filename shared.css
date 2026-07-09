@@ -2864,20 +2864,6 @@ nav a.active {
   padding: 24px 24px
 }
 
-.sol-num {
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  color: rgba(255, 255, 255, 0.25);
-  min-width: 40px;
-  transition: color .3s
-}
-
-.sol-item.open .sol-num {
-  color: var(--gold)
-}
-
 .sol-title {
   font-family: 'Sora', sans-serif;
   font-size: clamp(26px, 3vw, 40px);
