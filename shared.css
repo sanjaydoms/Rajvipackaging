@@ -6398,8 +6398,6 @@ footer {
 
 /* â”€â”€ CONTACT SECTION (homepage â€” info only) â”€â”€ */
 .contact-info-only {
-  max-width: var(--max-w);
-  margin: 0 auto;
   padding: 0 52px;
   display: grid;
   grid-template-columns: 1fr 1fr;
