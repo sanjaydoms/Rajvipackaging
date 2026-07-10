@@ -447,15 +447,60 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* ===== "WHY CHOOSE US" CARD CAROUSEL (About page) ===== */
+document.addEventListener('DOMContentLoaded', function () {
+  const track = document.getElementById('whyCarouselTrack');
+  if (!track) return;
+  
+  const dotsContainer = document.getElementById('whyCarouselDots');
+  
+  // Update active dot on scroll
+  track.addEventListener('scroll', function () {
+    const width = track.getBoundingClientRect().width;
+    if (width <= 0) return;
+    const index = Math.round(track.scrollLeft / width);
+    updateActiveDot(index);
+  });
+  
+  function updateActiveDot(index) {
+    if (!dotsContainer) return;
+    const dots = dotsContainer.querySelectorAll('.why-dot');
+    dots.forEach((dot, idx) => {
+      if (idx === index) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+  }
+});
+
+function whyCarouselGoTo(index) {
+  const track = document.getElementById('whyCarouselTrack');
+  if (!track) return;
+  const width = track.getBoundingClientRect().width;
+  track.scrollTo({ left: index * width, behavior: 'smooth' });
+}
+
 function whyCarouselNav(dir) {
   const track = document.getElementById('whyCarouselTrack');
   if (!track) return;
-  const card = track.querySelector('.why-card');
-  if (!card) return;
-  const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-  track.scrollBy({ left: dir * (card.getBoundingClientRect().width + gap), behavior: 'smooth' });
+  const width = track.getBoundingClientRect().width;
+  if (width <= 0) return;
+  const cards = track.querySelectorAll('.why-card');
+  const totalCards = cards.length;
+  if (totalCards <= 0) return;
+  
+  let currentIndex = Math.round(track.scrollLeft / width);
+  let nextIndex = currentIndex + dir;
+  
+  if (nextIndex < 0) {
+    nextIndex = totalCards - 1;
+  } else if (nextIndex >= totalCards) {
+    nextIndex = 0;
+  }
+  
+  whyCarouselGoTo(nextIndex);
 }
-
 
 /* ===== SOLUTIONS ACCORDION ===== */
 document.addEventListener('DOMContentLoaded', function () {
