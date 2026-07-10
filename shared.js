@@ -446,6 +446,16 @@ document.addEventListener('DOMContentLoaded', function () {
   addFpHamburgers();
 });
 
+/* ===== "WHY CHOOSE US" CARD CAROUSEL (About page) ===== */
+function whyCarouselNav(dir) {
+  const track = document.getElementById('whyCarouselTrack');
+  if (!track) return;
+  const card = track.querySelector('.why-card');
+  if (!card) return;
+  const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+  track.scrollBy({ left: dir * (card.getBoundingClientRect().width + gap), behavior: 'smooth' });
+}
+
 
 /* ===== SOLUTIONS ACCORDION ===== */
 document.addEventListener('DOMContentLoaded', function () {
