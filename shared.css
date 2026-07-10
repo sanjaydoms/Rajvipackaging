@@ -578,6 +578,7 @@
   max-width: 1200px;
   margin: 0 auto;
   z-index: 2;
+  padding: 30px 0;
 }
 .why-carousel-track {
   display: flex;
@@ -585,10 +586,12 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  padding-bottom: 10px;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  padding: 30px 0;
+  margin: -30px 0;
 }
+
 .why-carousel-track::-webkit-scrollbar {
   display: none;
 }
