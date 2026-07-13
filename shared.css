@@ -1847,6 +1847,8 @@
   overflow: hidden;
   transition: border-color 0.3s, background 0.3s;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .cat-card:hover {
@@ -1878,7 +1880,10 @@
 }
 
 .cat-card-body {
-  padding: 28px 28px 32px;
+  padding: 24px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .cat-card-name {
@@ -1886,7 +1891,8 @@
   font-size: 20px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 10px;
+  padding: 28px 28px 18px;
+  margin-bottom: 0;
 }
 
 .cat-card-desc {
@@ -1894,7 +1900,8 @@
   font-size: 13px;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  flex-grow: 1;
 }
 
 .cat-card-link {
@@ -1907,11 +1914,13 @@
   align-items: center;
   gap: 6px;
   transition: gap 0.2s;
+  align-self: flex-end;
 }
 
 .cat-card:hover .cat-card-link {
   gap: 12px;
 }
+
 
 /* ===== SOLUTION INNER PAGES (ENHANCED) ===== */
 .sol-page-hero {
@@ -9446,3 +9455,127 @@ footer {
 header:has(.hamburger) .fp-hamburger {
   display: none !important;
 }
+
+/* ===== SOLUTIONS LANDING PAGE ===== */
+.sol-landing-section {
+  padding: 100px 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sol-landing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.sol-landing-card {
+  position: relative;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 520px;
+}
+
+.sol-landing-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.sol-landing-card-img-wrap {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.sol-landing-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.sol-landing-card:hover .sol-landing-card-img-wrap img {
+  transform: scale(1.08);
+}
+
+.sol-landing-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(5, 18, 9, 0.8), transparent 70%);
+}
+
+.sol-landing-card-body {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.sol-landing-card-num {
+  font-family: 'Sora', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gold) !important;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.sol-landing-card-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--g1) !important;
+  margin-bottom: 12px;
+}
+
+.sol-landing-card-desc {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: var(--sub) !important;
+  line-height: 1.7;
+  flex-grow: 1;
+  margin-bottom: 24px;
+}
+
+.sol-landing-card-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gold) !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: gap 0.2s;
+  align-self: flex-start;
+}
+
+.sol-landing-card:hover .sol-landing-card-link {
+  gap: 14px;
+}
+
+@media (max-width: 991px) {
+  .sol-landing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sol-landing-grid {
+    grid-template-columns: 1fr;
+  }
+  .sol-landing-card {
+    height: auto;
+  }
+}
+
+/* FIX: Hide JS injected hamburger if a native one exists in the same header */

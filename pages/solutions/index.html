@@ -1,19 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <link rel="icon" type="image/png" href="../../images/Rajvi Favicon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blogs | Rajvi Packaging</title>
+  <title>Solutions | Rajvi Packaging — Custom Industrial Packaging</title>
   <meta name="description"
-    content="Industry insights, practical guides and material knowledge from the Rajvi Packaging team.">
+    content="Discover Rajvi Packaging's full suite of custom design, premium material packaging, and high-volume manufacturing solutions.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../../shared.css">
 </head>
 
 <body>
-
   <!-- Header -->
   <div class="fp-header">
     <a class="logo" href="../../">
@@ -29,35 +32,86 @@
     </a>
 
     <nav class="fp-header-nav">
-
       <a href="../about/">About</a>
       <a href="../products/">Products</a>
-      <a href="../solutions/">Solutions</a>
-      <a href="../blogs/" class="fp-nav-active" aria-current="page" onclick="return false;">Blogs</a>
-      <a href="../contact/" class="fp-nav-cta">Contact
-        Us</a>
+      <a href="#" class="fp-nav-active" aria-current="page" onclick="return false;">Solutions</a>
+      <a href="../blogs/">Blogs</a>
+      <a href="../contact/" class="fp-nav-cta">Contact Us</a>
     </nav>
   </div>
 
-  <div class="standalone-page-content" id="page-blogs-all">
+  <!-- Hero / Introduction -->
+  <div class="cat-hero">
+    <div class="cat-hero-label">What We Do</div>
+    <h1 class="cat-hero-title">COMPLETE<span> SOLUTIONS</span></h1>
+    <p class="cat-hero-sub">From concept structural design to high-volume manufacturing, we deliver end-to-end protective packaging solutions tailored to your products.</p>
+  </div>
 
-    <!-- Hero -->
-    <div class="blogs-all-hero">
-      <div class="blogs-all-label">Industry Insights</div>
-      <h1 class="blogs-all-title">PACKAGING<br><span>KNOWLEDGE HUB</span></h1>
-      <p class="blogs-all-sub">Practical guides, industry analysis and material insights from the Rajvi Packaging team.
-      </p>
+  <!-- Solutions Grid Section -->
+  <div class="sol-landing-section">
+    <div class="sol-landing-grid">
+      <!-- Card 1: Design Solutions -->
+      <div class="sol-landing-card" onclick="window.location.href='../solutions-design/'">
+        <div class="sol-landing-card-img-wrap">
+          <img src="../../images/why_custom.jpg" alt="Design Solutions">
+          <div class="sol-landing-card-overlay"></div>
+        </div>
+        <div class="sol-landing-card-body">
+          <div>
+            <div class="sol-landing-card-num">Solution 01</div>
+            <h2 class="sol-landing-card-title">Design Solutions</h2>
+            <p class="sol-landing-card-desc">Precise CAD structural design, customized geometry engineering, prototyping, and performance validation before production commitment.</p>
+          </div>
+          <div class="sol-landing-card-link">
+            <span>Explore Design</span>
+            <span>→</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Packaging Solutions -->
+      <div class="sol-landing-card" onclick="window.location.href='../solutions-packaging/'">
+        <div class="sol-landing-card-img-wrap">
+          <img src="../../images/why_range.jpg" alt="Packaging Solutions">
+          <div class="sol-landing-card-overlay"></div>
+        </div>
+        <div class="sol-landing-card-body">
+          <div>
+            <div class="sol-landing-card-num">Solution 02</div>
+            <h2 class="sol-landing-card-title">Packaging Solutions</h2>
+            <p class="sol-landing-card-desc">A comprehensive range of foam, PP corrugated boxes, bubble wrap, lamination composite, and FLC container pallets engineered for transit.</p>
+          </div>
+          <div class="sol-landing-card-link">
+            <span>Explore Packaging</span>
+            <span>→</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Manufacturing Solutions -->
+      <div class="sol-landing-card" onclick="window.location.href='../solutions-manufacturing/'">
+        <div class="sol-landing-card-img-wrap">
+          <img src="../../images/why_mfg.jpg" alt="Manufacturing Solutions">
+          <div class="sol-landing-card-overlay"></div>
+        </div>
+        <div class="sol-landing-card-body">
+          <div>
+            <div class="sol-landing-card-num">Solution 03</div>
+            <h2 class="sol-landing-card-title">Manufacturing Solutions</h2>
+            <p class="sol-landing-card-desc">CNC precision profiling, heat lamination, die-cutting, assembly, and strict multi-stage quality control under a 27,000 sq.ft facility.</p>
+          </div>
+          <div class="sol-landing-card-link">
+            <span>Explore Manufacturing</span>
+            <span>→</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- All blogs grid — populated by shared.js renderBlogsAll() -->
-    <div class="blogs-all-grid" id="blogs-all-container"></div>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-
-    <!-- TOP GRID: Logo col + 3 nav cols -->
+  <!-- Footer -->
+  <footer class="site-footer">
     <div class="footer-v2-top">
-
       <!-- BRAND COL -->
       <div class="footer-v2-brand">
         <img src="../../images/logow.png" alt="Rajvi Packaging" class="footer-logo-img"
@@ -111,7 +165,6 @@
           <a href="../contact/">Contact Us</a>
         </nav>
       </div>
-
     </div>
 
     <!-- CONTACT BAR -->
@@ -122,8 +175,7 @@
           <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" />
           <circle cx="12" cy="10" r="3" />
         </svg>
-        <a href="https://maps.app.goo.gl/Af2QqwHoCBzcbe7a7" target="_blank" rel="noopener" class="footer-v2-address-link">Plot No. 5 &amp; 6, City Survey No. NA/750/5 &amp; NA/750/6, Pipariya Faliya, Near Nitin Castings Ltd and
-          Aarth Industries, Village Karvad, Vapi 396195</a>
+        <a href="https://maps.app.goo.gl/Af2QqwHoCBzcbe7a7" target="_blank" rel="noopener" class="footer-v2-address-link">Plot No. 5 &amp; 6, City Survey No. NA/750/5 &amp; NA/750/6, Pipariya Faliya, Near Nitin Castings Ltd and Aarth Industries, Village Karvad, Vapi 396195</a>
       </div>
       <div class="footer-v2-contact-cell footer-v2-contact-cell--border">
         <svg class="fv2-contact-icon-plain" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -139,70 +191,19 @@
           <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
           <polyline points="22,6 12,13 2,6" />
         </svg>
-        <a href="mailto:info@rajvipackaging.com">info@rajvipackaging.com</a>
+        <a href="mailto:rajvipackaging@gmail.com">rajvipackaging@gmail.com</a>
       </div>
     </div>
 
     <!-- BOTTOM BAR -->
     <div class="footer-v2-bottom">
-      <div class="footer-v2-copy">&copy; 2025 Rajvi Packaging. All rights reserved.</div>
-      <div class="footer-v2-doms">
-        Made by
-        <a href="https://www.domsglobal.co/" target="_blank" rel="noopener" class="footer-doms-link">
-          <canvas id="footer-logo-canvas" class="footer-doms-canvas" width="220" height="124"
-            aria-label="Doms Global"></canvas>
-        </a>
-      </div>
-      <div class="footer-v2-legal">
+      <div>&copy; 2026 Rajvi Packaging. All Rights Reserved.</div>
+      <div class="footer-v2-bottom-links">
         <a href="../privacy policy/">Privacy Policy</a>
-        <span class="fv2-legal-sep">|</span>
-        <a href="../terms of use/">Terms of Use</a>
-        <span class="fv2-legal-sep">|</span>
         <a href="../sitemap/">Sitemap</a>
       </div>
     </div>
-
   </footer>
-
-  </div><!-- /.standalone-page-content -->
-
-  <!-- Blog Detail Overlay -->
-  <div id="blog-detail-overlay">
-    <div class="blog-overlay-box">
-      <div class="blog-overlay-close">
-        <div class="blog-overlay-label">INDUSTRY INSIGHTS</div>
-        <button class="blog-overlay-close-btn" onclick="closeBlogOverlay()">&#10005; Close</button>
-      </div>
-      <div class="blog-overlay-body">
-        <div id="bov-category" class="blog-overlay-cat"></div>
-        <h1 id="bov-title" class="blog-overlay-title"></h1>
-        <div class="blog-overlay-meta">
-          <span id="bov-date"></span>
-          <span id="bov-readtime"></span>
-        </div>
-        <img id="bov-img" class="blog-overlay-img" src="" alt="" />
-        <div id="bov-content" class="blog-overlay-content"></div>
-
-        <!-- CTA Buttons -->
-        <div class="blog-overlay-cta-row">
-          <button class="blog-overlay-cta blog-overlay-cta--outline" onclick="closeBlogOverlay()">
-            Read More Blogs <span>&#8594;</span>
-          </button>
-          <a class="blog-overlay-cta blog-overlay-cta--solid" href="../contact/">
-            Get a Quote <span>&#8594;</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="../../shared.js"></script>
-  <script>
-    // Auto-render blog grid on page load
-    document.addEventListener('DOMContentLoaded', function () {
-      if (typeof renderAllBlogs === 'function') renderAllBlogs();
-    });
-  </script>
 </body>
 
 </html>
