@@ -857,6 +857,49 @@
       justify-content: center;
       gap: 16px;
     }
+    .btn-footer-primary {
+      display: inline-flex;
+      align-items: center;
+      background: var(--ind-primary);
+      color: #fff;
+      border: 1.5px solid var(--ind-primary);
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-footer-primary:hover {
+      background: var(--ind-dark);
+      border-color: var(--ind-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(10, 61, 44, 0.15);
+    }
+    .btn-footer-secondary {
+      display: inline-flex;
+      align-items: center;
+      background: transparent;
+      color: var(--ind-primary);
+      border: 1.5px solid var(--ind-primary);
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+    }
+    .btn-footer-secondary:hover {
+      background: var(--ind-primary);
+      color: #fff;
+      transform: translateY(-2px);
+    }
 
     @media (max-width: 900px) {
       .ind-hero-inner, .ind-inquiry-inner, .ind-solutions-split { grid-template-columns: 1fr; gap: 40px; }
@@ -945,23 +988,28 @@
             <div class="ind-challenge-icon">⚡</div>
             <div class="ind-challenge-card-title">Electrostatic Discharge (ESD)</div>
             <div class="ind-challenge-card-desc">Static charge buildup destroys electronic relays, digital displays, and microcontrollers silently.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">🛡️</div>
             <div class="ind-challenge-card-title">Physical Impact Damage</div>
             <div class="ind-challenge-card-desc">Heavy switchgears and meters crack or fall out of calibration under transport drops.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">💧</div>
             <div class="ind-challenge-card-title">Moisture & Dust Ingress</div>
             <div class="ind-challenge-card-desc">Humidity corrodes copper contacts, and dust settles inside mechanical relays, causing operation failure.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">📐</div>
             <div class="ind-challenge-card-title">Screen Scratches</div>
             <div class="ind-challenge-card-desc">Friction between display windows and standard packaging boxes dulls display readability.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">⏱️</div>
             <div class="ind-challenge-card-title">Manual Assembly Line Speeds</div>
             <div class="ind-challenge-card-desc">Complex packaging wraps slow down high-speed component packaging benches.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">🌍</div>
             <div class="ind-challenge-card-title">Export Shipping Damage</div>
             <div class="ind-challenge-card-desc">Long transit loops expose electrical panels to corrosion and impact hazards.</div>
@@ -992,19 +1040,24 @@
                               <tr>
                 <td><strong>Surface Protection</strong></td>
                 <td>Pink ESD Bubble wrap</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Cushioning</strong></td>
                 <td>Custom EPE Pouches</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Shock Absorption</strong></td>
                 <td>CNC-cut Foam Inserts</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Enclosure Sealing</strong></td>
                 <td>Die-Cut Foam Gaskets</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Secure Bundling</strong></td>
                 <td>Adhesive Sealing Tapes</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Panel Support</strong></td>
                 <td>PP Corrugated Sheets</td>
               </tr>
@@ -1019,14 +1072,16 @@
               <div class="ind-sol-benefits">🔑 Key Benefits: ESD safe, custom-fit, zero screen scratches</div>
               <a href="../../product-foam/" class="btn-sol-link">View Product Page</a>
             </div>
-          </div>\n          <div class="ind-solution-card">
+          </div>
+          <div class="ind-solution-card">
             <div class="ind-sol-body">
               <div class="ind-sol-title">EPDM/EVA Foam Gaskets</div>
               <div class="ind-sol-desc">Custom die-cut foam sealing gaskets designed to provide dust and moisture seals for electrical cabinets.</div>
               <div class="ind-sol-benefits">🔑 Key Benefits: IP-rating compatible, long life, excellent compression</div>
               <a href="../../product-gaskets/" class="btn-sol-link">View Product Page</a>
             </div>
-          </div>\n          <div class="ind-solution-card">
+          </div>
+          <div class="ind-solution-card">
             <div class="ind-sol-body">
               <div class="ind-sol-title">High-Strength Bubble Sheets</div>
               <div class="ind-sol-desc">Bubble rolls and bags to wrap heavy switchgears, contactors, and relays for transit.</div>
@@ -1126,22 +1181,28 @@
                     <div class="ind-app-card">
             <div class="ind-app-icon">🔌</div>
             <div class="ind-app-title">Digital Meters & Relays</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">⚡</div>
             <div class="ind-app-title">Switchgear & Contactors</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">🏥</div>
             <div class="ind-app-title">Electrical Control Panels</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">⚙️</div>
             <div class="ind-app-title">Transformers & Chokes</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">📱</div>
             <div class="ind-app-title">Industrial Enclosures</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">🔌</div>
             <div class="ind-app-title">Circuit Breakers (MCBs)</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">🔌</div>
             <div class="ind-app-title">Connectors & Busbars</div>
           </div>
@@ -1157,7 +1218,12 @@
           <h2 class="ind-section-title">Electrical Components Segments We Support</h2>
         </div>
         <div class="ind-segments-grid">
-                    <div class="ind-segment-item">Switchgear & Control Gear Makers</div>\n          <div class="ind-segment-item">Electrical Meter Manufacturers</div>\n          <div class="ind-segment-item">Control Panel Builders</div>\n          <div class="ind-segment-item">Transformer & Power Supply Makers</div>\n          <div class="ind-segment-item">Home Automation Brands</div>\n          <div class="ind-segment-item">Electrical Spares Exporters</div>
+                    <div class="ind-segment-item">Switchgear & Control Gear Makers</div>
+          <div class="ind-segment-item">Electrical Meter Manufacturers</div>
+          <div class="ind-segment-item">Control Panel Builders</div>
+          <div class="ind-segment-item">Transformer & Power Supply Makers</div>
+          <div class="ind-segment-item">Home Automation Brands</div>
+          <div class="ind-segment-item">Electrical Spares Exporters</div>
         </div>
       </div>
     </section>
@@ -1168,13 +1234,16 @@
                 <div>
           <div class="ind-metric-num">15+</div>
           <div class="ind-metric-label">Years in Business</div>
-        </div>\n        <div>
+        </div>
+        <div>
           <div class="ind-metric-num">100%</div>
           <div class="ind-metric-label">ESD Safe Options</div>
-        </div>\n        <div>
+        </div>
+        <div>
           <div class="ind-metric-num">±1mm</div>
           <div class="ind-metric-label">Gasket Precision</div>
-        </div>\n        <div>
+        </div>
+        <div>
           <div class="ind-metric-num">Bulk</div>
           <div class="ind-metric-label">Volume Capacity</div>
         </div>
@@ -1225,7 +1294,8 @@
             <div class="faq-content">
               We recommend Pink ESD EPE foam or cross-linked PE (XLPE) foam. They prevent static charge generation and do not shed fibers, keeping electrical relays clean and safe.
             </div>
-          </div>\n          <div class="faq-item">
+          </div>
+          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>Do you manufacture custom self-adhesive gaskets for control cabinets?</span>
               <span class="faq-icon">+</span>
@@ -1233,7 +1303,8 @@
             <div class="faq-content">
               Yes, we die-cut self-adhesive EPDM and EVA foam gaskets to your exact specifications to prevent water and dust leaks in outdoor panel cabinets.
             </div>
-          </div>\n          <div class="faq-item">
+          </div>
+          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>Can you design custom trays for shipping multiple digital meters?</span>
               <span class="faq-icon">+</span>
@@ -1241,7 +1312,8 @@
             <div class="faq-content">
               Yes, we configure multi-cavity EPE foam trays that nest multiple digital meters in a single carton for transport.
             </div>
-          </div>\n          <div class="faq-item">
+          </div>
+          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>Are your electrical packaging materials ESD certified?</span>
               <span class="faq-icon">+</span>
@@ -1249,7 +1321,8 @@
             <div class="faq-content">
               Yes, our anti-static bubble wraps and foams are tested to meet standard surface resistance specifications for ESD protection (10^6 to 10^11 ohms).
             </div>
-          </div>\n          <div class="faq-item">
+          </div>
+          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>Do you sign NDAs before receiving enclosure drawings?</span>
               <span class="faq-icon">+</span>
@@ -1274,7 +1347,8 @@
             <div class="ind-resource-title">Electrical ESD Packaging Guide</div>
             <div class="ind-resource-desc">How to select ESD safe materials for digital meters and circuit boards.</div>
             <a href="#" class="btn-resource" style="color:var(--gold);">Read Resource →</a>
-          </div>\n          <div class="faq-item" style="border:none;">
+          </div>
+          <div class="faq-item" style="border:none;">
             <div class="ind-resource-title">Cabinet Sealing and IP Gasket Guide</div>
             <div class="ind-resource-desc">Selecting the correct EPDM/EVA foam density for dust and splash seals.</div>
             <a href="#" class="btn-resource" style="color:var(--gold);">Read Resource →</a>
@@ -1363,8 +1437,8 @@
       <div class="ind-footer-cta-inner">
         <h3 class="ind-footer-cta-title">Looking for reliable packaging solutions for your business?</h3>
         <div class="ind-footer-cta-btns">
-          <a href="#inquiry" class="btn btn-primary" style="background:var(--ind-primary); border-color:var(--ind-primary); color:#fff;">Request Quote</a>
-          <a href="tel:+919274841995" class="btn btn-outline" style="color:var(--ind-primary); border-color:var(--ind-primary);">Call Our Team</a>
+          <a href="#inquiry" class="btn-footer-primary">Request Quote</a>
+          <a href="tel:+919274841995" class="btn-footer-secondary">Call Our Team</a>
         </div>
       </div>
     </section>

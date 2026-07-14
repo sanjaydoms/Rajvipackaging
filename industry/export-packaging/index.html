@@ -857,6 +857,49 @@
       justify-content: center;
       gap: 16px;
     }
+    .btn-footer-primary {
+      display: inline-flex;
+      align-items: center;
+      background: var(--ind-primary);
+      color: #fff;
+      border: 1.5px solid var(--ind-primary);
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-footer-primary:hover {
+      background: var(--ind-dark);
+      border-color: var(--ind-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(10, 61, 44, 0.15);
+    }
+    .btn-footer-secondary {
+      display: inline-flex;
+      align-items: center;
+      background: transparent;
+      color: var(--ind-primary);
+      border: 1.5px solid var(--ind-primary);
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+    }
+    .btn-footer-secondary:hover {
+      background: var(--ind-primary);
+      color: #fff;
+      transform: translateY(-2px);
+    }
 
     @media (max-width: 900px) {
       .ind-hero-inner, .ind-inquiry-inner, .ind-solutions-split { grid-template-columns: 1fr; gap: 40px; }
@@ -945,23 +988,28 @@
             <div class="ind-challenge-icon">💧</div>
             <div class="ind-challenge-card-title">Saltwater Corrosion</div>
             <div class="ind-challenge-card-desc">High maritime humidity and salty sea air rust precision machinery and metal components inside containers.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">📦</div>
             <div class="ind-challenge-card-title">Container Container Shifting</div>
             <div class="ind-challenge-card-desc">Heavy ocean swelling causes cargo to shift, crash, and collapse inside shipping containers.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">📐</div>
             <div class="ind-challenge-card-title">Multi-Country Transit Shocks</div>
             <div class="ind-challenge-card-desc">Transferring cargo across docks, airliners, and trucks exposes packaging to severe drops and impacts.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">📜</div>
             <div class="ind-challenge-card-title">Rigid Import Regulations</div>
             <div class="ind-challenge-card-desc">Many nations restrict wood packaging, requiring certified, non-wood, and recyclable alternatives.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">⏱️</div>
             <div class="ind-challenge-card-title">Extreme Temperature Swings</div>
             <div class="ind-challenge-card-desc">Container interiors reach 60°C in equatorial seas, degrading glue joints and low-grade plastics.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">💔</div>
             <div class="ind-challenge-card-title">Destination Rejections</div>
             <div class="ind-challenge-card-desc">Any transit damage at international destinations leads to expensive re-shipping fees and brand loss.</div>
@@ -992,19 +1040,24 @@
                               <tr>
                 <td><strong>Surface Protection</strong></td>
                 <td>High-GSM Bubble wrap</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Cushioning</strong></td>
                 <td>Thick EPE Foam</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Shock Absorption</strong></td>
                 <td>Custom Foam Inserts</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Moisture Protection</strong></td>
                 <td>Aluminium Laminated wrap</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Secure Containment</strong></td>
                 <td>Specialty Sealing Tapes</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Non-Wood Pallet Support</strong></td>
                 <td>PP Crates & Pallets</td>
               </tr>
@@ -1019,14 +1072,16 @@
               <div class="ind-sol-benefits">🔑 Key Benefits: Zero moisture transmission, heat reflective, dust-free</div>
               <a href="../../product-bubble/" class="btn-sol-link">View Product Page</a>
             </div>
-          </div>\n          <div class="ind-solution-card">
+          </div>
+          <div class="ind-solution-card">
             <div class="ind-sol-body">
               <div class="ind-sol-title">Export-Grade EPE Foam Cushions</div>
               <div class="ind-sol-desc">High-density EPE foam dunnage designed to secure heavy machinery and engines inside containers.</div>
               <div class="ind-sol-benefits">🔑 Key Benefits: Tear-resistant, high G-force absorption, ISPM-15 compliant (wood alternative)</div>
               <a href="../../product-foam/" class="btn-sol-link">View Product Page</a>
             </div>
-          </div>\n          <div class="ind-solution-card">
+          </div>
+          <div class="ind-solution-card">
             <div class="ind-sol-body">
               <div class="ind-sol-title">Heavy-Duty PP Corrugated Crates</div>
               <div class="ind-sol-desc">Reusable plastic crates that replace wooden boxes, eliminating fumigation fees and import customs clearance issues.</div>
@@ -1126,22 +1181,28 @@
                     <div class="ind-app-card">
             <div class="ind-app-icon">⚙️</div>
             <div class="ind-app-title">Heavy Machineries</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">🔌</div>
             <div class="ind-app-title">Electrical Switchgears</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">🚗</div>
             <div class="ind-app-title">Auto Components</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">🧪</div>
             <div class="ind-app-title">Pharmaceutical APIs</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">📱</div>
             <div class="ind-app-title">Precision Electronics</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">🏺</div>
             <div class="ind-app-title">Ceramic Tablewares</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">📦</div>
             <div class="ind-app-title">Bulk Commodity Pallets</div>
           </div>
@@ -1157,7 +1218,12 @@
           <h2 class="ind-section-title">Export Packaging Segments We Support</h2>
         </div>
         <div class="ind-segments-grid">
-                    <div class="ind-segment-item">Machinery Exporters</div>\n          <div class="ind-segment-item">Automotive Parts OEM</div>\n          <div class="ind-segment-item">Electrical Switchgear Exporters</div>\n          <div class="ind-segment-item">Pharma API Exporters</div>\n          <div class="ind-segment-item">Ceramic Tableware Exporters</div>\n          <div class="ind-segment-item">Biotech Goods Exporters</div>
+                    <div class="ind-segment-item">Machinery Exporters</div>
+          <div class="ind-segment-item">Automotive Parts OEM</div>
+          <div class="ind-segment-item">Electrical Switchgear Exporters</div>
+          <div class="ind-segment-item">Pharma API Exporters</div>
+          <div class="ind-segment-item">Ceramic Tableware Exporters</div>
+          <div class="ind-segment-item">Biotech Goods Exporters</div>
         </div>
       </div>
     </section>
@@ -1168,13 +1234,16 @@
                 <div>
           <div class="ind-metric-num">15+</div>
           <div class="ind-metric-label">Years in Business</div>
-        </div>\n        <div>
+        </div>
+        <div>
           <div class="ind-metric-num">Zero</div>
           <div class="ind-metric-label">Customs Rejections</div>
-        </div>\n        <div>
+        </div>
+        <div>
           <div class="ind-metric-num">100%</div>
           <div class="ind-metric-label">Fumigation Free</div>
-        </div>\n        <div>
+        </div>
+        <div>
           <div class="ind-metric-num">Global</div>
           <div class="ind-metric-label">Compliance Ready</div>
         </div>
@@ -1225,7 +1294,8 @@
             <div class="faq-content">
               For rust prevention, we recommend wrapping metal components in aluminum foil laminated bubble wrap. The closed-cell structure and metallic foil act as a barrier against sea humidity and condensation.
             </div>
-          </div>\n          <div class="faq-item">
+          </div>
+          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>Are your PP boxes and foam inserts ISPM-15 compliant?</span>
               <span class="faq-icon">+</span>
@@ -1233,7 +1303,8 @@
             <div class="faq-content">
               Yes, our plastic boxes and EPE/XLPE foams are completely exempt from ISPM-15 regulations (which only apply to wood packaging). They require no fumigation or heat treatment, ensuring smooth customs clearance globally.
             </div>
-          </div>\n          <div class="faq-item">
+          </div>
+          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>Can you design custom dunnage for heavy export machinery?</span>
               <span class="faq-icon">+</span>
@@ -1241,7 +1312,8 @@
             <div class="faq-content">
               Yes, we engineer high-density foam dunnage and dunnage blocks to distribute machinery weight and lock it securely inside shipping containers.
             </div>
-          </div>\n          <div class="faq-item">
+          </div>
+          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>Do you support custom printing for export handling signs?</span>
               <span class="faq-icon">+</span>
@@ -1249,7 +1321,8 @@
             <div class="faq-content">
               Yes, we print international handling symbols, barcodes, and logos onto bubble wraps and sheets.
             </div>
-          </div>\n          <div class="faq-item">
+          </div>
+          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>What is the typical lead time for custom export orders?</span>
               <span class="faq-icon">+</span>
@@ -1274,7 +1347,8 @@
             <div class="ind-resource-title">Sea Freight Ingress and Rust Prevention Guide</div>
             <div class="ind-resource-desc">How to prevent moisture damage and oxidation in maritime transit loops.</div>
             <a href="#" class="btn-resource" style="color:var(--gold);">Read Resource →</a>
-          </div>\n          <div class="faq-item" style="border:none;">
+          </div>
+          <div class="faq-item" style="border:none;">
             <div class="ind-resource-title">ISPM-15 Fumigation-Exempt Packaging Guide</div>
             <div class="ind-resource-desc">Switching from wooden boxes to PP and foam to avoid customs clearance delays.</div>
             <a href="#" class="btn-resource" style="color:var(--gold);">Read Resource →</a>
@@ -1363,8 +1437,8 @@
       <div class="ind-footer-cta-inner">
         <h3 class="ind-footer-cta-title">Looking for reliable packaging solutions for your business?</h3>
         <div class="ind-footer-cta-btns">
-          <a href="#inquiry" class="btn btn-primary" style="background:var(--ind-primary); border-color:var(--ind-primary); color:#fff;">Request Quote</a>
-          <a href="tel:+919274841995" class="btn btn-outline" style="color:var(--ind-primary); border-color:var(--ind-primary);">Call Our Team</a>
+          <a href="#inquiry" class="btn-footer-primary">Request Quote</a>
+          <a href="tel:+919274841995" class="btn-footer-secondary">Call Our Team</a>
         </div>
       </div>
     </section>

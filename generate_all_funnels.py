@@ -1859,6 +1859,49 @@ html_template = """<!DOCTYPE html>
       justify-content: center;
       gap: 16px;
     }
+    .btn-footer-primary {
+      display: inline-flex;
+      align-items: center;
+      background: var(--ind-primary);
+      color: #fff;
+      border: 1.5px solid var(--ind-primary);
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-footer-primary:hover {
+      background: var(--ind-dark);
+      border-color: var(--ind-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(10, 61, 44, 0.15);
+    }
+    .btn-footer-secondary {
+      display: inline-flex;
+      align-items: center;
+      background: transparent;
+      color: var(--ind-primary);
+      border: 1.5px solid var(--ind-primary);
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+    }
+    .btn-footer-secondary:hover {
+      background: var(--ind-primary);
+      color: #fff;
+      transform: translateY(-2px);
+    }
 
     @media (max-width: 900px) {
       .ind-hero-inner, .ind-inquiry-inner, .ind-solutions-split { grid-template-columns: 1fr; gap: 40px; }
@@ -2217,8 +2260,8 @@ html_template = """<!DOCTYPE html>
       <div class="ind-footer-cta-inner">
         <h3 class="ind-footer-cta-title">Looking for reliable packaging solutions for your business?</h3>
         <div class="ind-footer-cta-btns">
-          <a href="#inquiry" class="btn btn-primary" style="background:var(--ind-primary); border-color:var(--ind-primary); color:#fff;">Request Quote</a>
-          <a href="tel:+919274841995" class="btn btn-outline" style="color:var(--ind-primary); border-color:var(--ind-primary);">Call Our Team</a>
+          <a href="#inquiry" class="btn-footer-primary">Request Quote</a>
+          <a href="tel:+919274841995" class="btn-footer-secondary">Call Our Team</a>
         </div>
       </div>
     </section>
@@ -2338,7 +2381,7 @@ for name, data in industries.items():
     problems_list = "\n".join([f"              <li>{c['desc']}</li>" for c in data["challenges"][:5]])
     
     # Build challenges grid
-    challenges_grid = "\\n".join([
+    challenges_grid = "\n".join([
         f"""          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">{c['icon']}</div>
             <div class="ind-challenge-card-title">{c['title']}</div>
@@ -2347,7 +2390,7 @@ for name, data in industries.items():
     ])
     
     # Build mapping matrix table rows
-    mapping_table_rows = "\\n".join([
+    mapping_table_rows = "\n".join([
         f"""              <tr>
                 <td><strong>{m['challenge']}</strong></td>
                 <td>{m['product']}</td>
@@ -2355,7 +2398,7 @@ for name, data in industries.items():
     ])
     
     # Build solutions cards
-    solutions_cards_grid = "\\n".join([
+    solutions_cards_grid = "\n".join([
         f"""          <div class="ind-solution-card">
             <div class="ind-sol-body">
               <div class="ind-sol-title">{sc['title']}</div>
@@ -2367,7 +2410,7 @@ for name, data in industries.items():
     ])
     
     # Build apps grid
-    apps_grid = "\\n".join([
+    apps_grid = "\n".join([
         f"""          <div class="ind-app-card">
             <div class="ind-app-icon">{a['icon']}</div>
             <div class="ind-app-title">{a['title']}</div>
@@ -2375,12 +2418,12 @@ for name, data in industries.items():
     ])
     
     # Build segments grid
-    segments_grid = "\\n".join([
+    segments_grid = "\n".join([
         f"""          <div class="ind-segment-item">{s}</div>""" for s in data["segments"]
     ])
     
     # Build metrics grid
-    metrics_grid = "\\n".join([
+    metrics_grid = "\n".join([
         f"""        <div>
           <div class="ind-metric-num">{m['num']}</div>
           <div class="ind-metric-label">{m['label']}</div>
@@ -2388,7 +2431,7 @@ for name, data in industries.items():
     ])
     
     # Build FAQs accordion
-    faqs_accordion = "\\n".join([
+    faqs_accordion = "\n".join([
         f"""          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>{f['q']}</span>
@@ -2401,7 +2444,7 @@ for name, data in industries.items():
     ])
     
     # Build resources grid
-    resources_grid = "\\n".join([
+    resources_grid = "\n".join([
         f"""          <div class="faq-item" style="border:none;">
             <div class="ind-resource-title">{r['title']}</div>
             <div class="ind-resource-desc">{r['desc']}</div>

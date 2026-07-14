@@ -857,6 +857,49 @@
       justify-content: center;
       gap: 16px;
     }
+    .btn-footer-primary {
+      display: inline-flex;
+      align-items: center;
+      background: var(--ind-primary);
+      color: #fff;
+      border: 1.5px solid var(--ind-primary);
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-footer-primary:hover {
+      background: var(--ind-dark);
+      border-color: var(--ind-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(10, 61, 44, 0.15);
+    }
+    .btn-footer-secondary {
+      display: inline-flex;
+      align-items: center;
+      background: transparent;
+      color: var(--ind-primary);
+      border: 1.5px solid var(--ind-primary);
+      padding: 14px 28px;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+    }
+    .btn-footer-secondary:hover {
+      background: var(--ind-primary);
+      color: #fff;
+      transform: translateY(-2px);
+    }
 
     @media (max-width: 900px) {
       .ind-hero-inner, .ind-inquiry-inner, .ind-solutions-split { grid-template-columns: 1fr; gap: 40px; }
@@ -945,23 +988,28 @@
             <div class="ind-challenge-icon">⚡</div>
             <div class="ind-challenge-card-title">Static Electricity</div>
             <div class="ind-challenge-card-desc">Electrostatic discharge (ESD) can destroy internal circuits silently without visible physical damage.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">🛡️</div>
             <div class="ind-challenge-card-title">Fragile Components</div>
             <div class="ind-challenge-card-desc">Precision microchips, glass displays, and connectors cannot withstand transit drops and vibrations.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">📦</div>
             <div class="ind-challenge-card-title">Transit Damage</div>
             <div class="ind-challenge-card-desc">Multi-handling courier networks introduce physical shocks that crack outer enclosures and bend connectors.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">💧</div>
             <div class="ind-challenge-card-title">Moisture Exposure</div>
             <div class="ind-challenge-card-desc">Humidity and condensation trigger oxidation and corrosion on metal terminals and PCB contact pads.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">🌍</div>
             <div class="ind-challenge-card-title">Export Compliance</div>
             <div class="ind-challenge-card-desc">International electronics shipments must meet rigid international container and environmental standards.</div>
-          </div>\n          <div class="ind-challenge-card">
+          </div>
+          <div class="ind-challenge-card">
             <div class="ind-challenge-icon">📐</div>
             <div class="ind-challenge-card-title">Product Scratches</div>
             <div class="ind-challenge-card-desc">Friction between standard packaging and glossy or polished screens degrades outer product aesthetics.</div>
@@ -992,19 +1040,24 @@
                               <tr>
                 <td><strong>Surface Protection</strong></td>
                 <td>Bubble Wrap</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Cushioning</strong></td>
                 <td>EPE Foam</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Shock Absorption</strong></td>
                 <td>Foam Inserts</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Component Protection</strong></td>
                 <td>Foam Gaskets</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Secure Packaging</strong></td>
                 <td>Specialty Tapes</td>
-              </tr>\n              <tr>
+              </tr>
+              <tr>
                 <td><strong>Heavy Product Support</strong></td>
                 <td>PP Boxes & Sheets</td>
               </tr>
@@ -1019,14 +1072,16 @@
               <div class="ind-sol-benefits">🔑 Key Benefits: ESD Safe, Lightweight, Cost-Effective</div>
               <a href="../../product-bubble/" class="btn-sol-link">View Product Page</a>
             </div>
-          </div>\n          <div class="ind-solution-card">
+          </div>
+          <div class="ind-solution-card">
             <div class="ind-sol-body">
               <div class="ind-sol-title">Precision Foam Inserts</div>
               <div class="ind-sol-desc">Custom CNC-routed polyurethane and polyethylene foam shapes for snug device placement.</div>
               <div class="ind-sol-benefits">🔑 Key Benefits: Zero-movement fit, High G-force absorption, Lint-free</div>
               <a href="../../product-foam/" class="btn-sol-link">View Product Page</a>
             </div>
-          </div>\n          <div class="ind-solution-card">
+          </div>
+          <div class="ind-solution-card">
             <div class="ind-sol-body">
               <div class="ind-sol-title">EPE Foam Pouches & Liners</div>
               <div class="ind-sol-desc">Soft closed-cell polyethylene sleeves designed for fast packing lines.</div>
@@ -1126,22 +1181,28 @@
                     <div class="ind-app-card">
             <div class="ind-app-icon">⚡</div>
             <div class="ind-app-title">PCB Boards</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">💡</div>
             <div class="ind-app-title">LED Lights</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">📱</div>
             <div class="ind-app-title">Mobile Accessories</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">🖥️</div>
             <div class="ind-app-title">Consumer Electronics</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">🔌</div>
             <div class="ind-app-title">Power Supplies</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">🏥</div>
             <div class="ind-app-title">Medical Electronics</div>
-          </div>\n          <div class="ind-app-card">
+          </div>
+          <div class="ind-app-card">
             <div class="ind-app-icon">⚙️</div>
             <div class="ind-app-title">Industrial Electronics</div>
           </div>
@@ -1157,7 +1218,12 @@
           <h2 class="ind-section-title">Electronics Segments We Support</h2>
         </div>
         <div class="ind-segments-grid">
-                    <div class="ind-segment-item">Consumer Electronics</div>\n          <div class="ind-segment-item">Industrial Electronics</div>\n          <div class="ind-segment-item">Semiconductor</div>\n          <div class="ind-segment-item">LED Manufacturing</div>\n          <div class="ind-segment-item">Telecom Equipment</div>\n          <div class="ind-segment-item">Electrical Components</div>
+                    <div class="ind-segment-item">Consumer Electronics</div>
+          <div class="ind-segment-item">Industrial Electronics</div>
+          <div class="ind-segment-item">Semiconductor</div>
+          <div class="ind-segment-item">LED Manufacturing</div>
+          <div class="ind-segment-item">Telecom Equipment</div>
+          <div class="ind-segment-item">Electrical Components</div>
         </div>
       </div>
     </section>
@@ -1168,13 +1234,16 @@
                 <div>
           <div class="ind-metric-num">15+</div>
           <div class="ind-metric-label">Years in Business</div>
-        </div>\n        <div>
+        </div>
+        <div>
           <div class="ind-metric-num">0%</div>
           <div class="ind-metric-label">ESD Defect Rate</div>
-        </div>\n        <div>
+        </div>
+        <div>
           <div class="ind-metric-num">99.8%</div>
           <div class="ind-metric-label">On-Time Delivery</div>
-        </div>\n        <div>
+        </div>
+        <div>
           <div class="ind-metric-num">Custom</div>
           <div class="ind-metric-label">CAD Prototyping</div>
         </div>
@@ -1225,7 +1294,8 @@
             <div class="faq-content">
               For electronics, anti-static (ESD) EPE foam and pink bubble wrap are best. They prevent static charge buildup while absorbing transport shocks.
             </div>
-          </div>\n          <div class="faq-item">
+          </div>
+          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>Can Rajvi manufacture custom foam inserts?</span>
               <span class="faq-icon">+</span>
@@ -1233,7 +1303,8 @@
             <div class="faq-content">
               Yes, we custom-design and cut foam inserts to your exact component dimensions using CNC routing and precision die-cutting.
             </div>
-          </div>\n          <div class="faq-item">
+          </div>
+          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>What is the minimum order quantity?</span>
               <span class="faq-icon">+</span>
@@ -1241,7 +1312,8 @@
             <div class="faq-content">
               Minimum order quantities vary by product type. Contact our sales team to discuss custom production runs for your volume requirements.
             </div>
-          </div>\n          <div class="faq-item">
+          </div>
+          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>Do you support export packaging?</span>
               <span class="faq-icon">+</span>
@@ -1249,7 +1321,8 @@
             <div class="faq-content">
               Yes, our packaging meets international standards for ocean and air export, ensuring moisture protection and robust physical containment.
             </div>
-          </div>\n          <div class="faq-item">
+          </div>
+          <div class="faq-item">
             <button class="faq-trigger" onclick="toggleFaq(this)">
               <span>Can you manufacture according to our drawings?</span>
               <span class="faq-icon">+</span>
@@ -1274,7 +1347,8 @@
             <div class="ind-resource-title">Electronics ESD Packaging Guide</div>
             <div class="ind-resource-desc">Learn how to select the right ESD foam density and resistance range for delicate boards.</div>
             <a href="#" class="btn-resource" style="color:var(--gold);">Read Resource →</a>
-          </div>\n          <div class="faq-item" style="border:none;">
+          </div>
+          <div class="faq-item" style="border:none;">
             <div class="ind-resource-title">DOA reduction Case Study</div>
             <div class="ind-resource-desc">How a medical diagnostics brand reduced transit defects to absolute zero using custom EPE foam.</div>
             <a href="#" class="btn-resource" style="color:var(--gold);">Read Resource →</a>
@@ -1363,8 +1437,8 @@
       <div class="ind-footer-cta-inner">
         <h3 class="ind-footer-cta-title">Looking for reliable packaging solutions for your business?</h3>
         <div class="ind-footer-cta-btns">
-          <a href="#inquiry" class="btn btn-primary" style="background:var(--ind-primary); border-color:var(--ind-primary); color:#fff;">Request Quote</a>
-          <a href="tel:+919274841995" class="btn btn-outline" style="color:var(--ind-primary); border-color:var(--ind-primary);">Call Our Team</a>
+          <a href="#inquiry" class="btn-footer-primary">Request Quote</a>
+          <a href="tel:+919274841995" class="btn-footer-secondary">Call Our Team</a>
         </div>
       </div>
     </section>
