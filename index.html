@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" href="images/Rajvi Favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajvi Packaging | Custom Industrial Packaging Solutions – Foam, PP Boxes, FLC Pallets</title>
+  <meta name="description"
+    content="Rajvi Packaging delivers end-to-end custom packaging solutions — foam buffers, PP boxes, FLC pallets, air bubble rolls, gaskets and more — for automotive, electronics, pharma and e-commerce industries across India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+</head>
+
+<body>
+
+  <header id="main-header" class="fp-header">
+    <a class="logo" href="./">
+      <img src="images\logo.png" alt="Rajvi Packaging" class="logo-img"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="logo-fallback" style="display:none">
+        <div class="logo-box"></div>
+        <div>
+          <div class="logo-text">Rajvi Packaging</div>
+          <div class="logo-sub">Design &middot; Protection &middot; Solutions</div>
+        </div>
+      </div>
+    </a>
+
+    <nav id="main-nav" class="fp-header-nav">
+      <a href="about/">About Us</a>
+      <a href="products/">Products</a>
+      <a href="solutions/">Solutions</a>
+      <a href="blogs/">Blogs</a>
+      <a href="contact/" class="fp-nav-cta">Contact Us</a>
+    </nav>
+
+    <!-- Hamburger (mobile only) -->
+    <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE NAV OVERLAY -->
+  <div id="mobile-nav-overlay" onclick="closeMobileNav()"></div>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div id="mobile-nav-drawer">
+    <div class="mob-nav-header">
+      <span class="mob-nav-logo-text">Rajvi Packaging</span>
+      <button class="mob-nav-close" onclick="closeMobileNav()">&#10005;</button>
+    </div>
+    <nav class="mob-nav-links">
+      <a href="about/">About Us</a>
+      <a href="products/">Products</a>
+      <a href="solutions/">Solutions</a>
+      <a href="blogs/">Blogs</a>
+    </nav>
+    <div class="mob-nav-cta-wrap">
+      <button class="mob-nav-cta" onclick="window.location.href='contact/'">Contact Us →</button>
+    </div>
+  </div>
+  <!-- HERO -->
+  <section id="hero">
+
+    <!-- HERO BACKGROUND IMAGE -->
+    <!-- FULL BG VIDEO -->
+    <video class="hero-bg-video" src="videos\video1.mp4" autoplay muted loop playsinline>
+    </video>
+
+    <!-- Overlay to keep text readable -->
+    <div class="hero-overlay"></div>
+
+    <!-- LEFT -->
+    <div class="hero-left">
+
+      <div class="hero-tag-line">Custom Industrial Packaging</div>
+      <h1 class="hero-h1">
+        DESIGNED FOR SAFETY.
+        <em>BUILT FOR INDUSTRY.</em>
+      </h1>
+      <p class="hero-sub">
+        Custom packaging solutions designed around your product requirements,
+        industry needs and protection goals.
+      </p>
+      <div class="hero-btns">
+        <a href="products/" class="btn btn-primary">
+          <span>Explore Products</span>
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="contact/" class="btn btn-outline">
+          <span>Get a Quote</span>
+        </a>
+      </div>
+
+    </div>
+    </div>
+
+    <!-- RIGHT (empty — video is the background) -->
+    <div class="hero-right" id="hero-stage"></div>
+
+
+  </section>
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-left">
+        <div class="sect-label reveal">About Rajvi Packaging</div>
+        <h2 class="about-heading reveal rd1">YOUR COMPLETE<span>PACKAGING SOLUTIONS PARTNER</span></h2>
+        <div class="about-body reveal rd2">
+          <p>Rajvi Packaging develops customized packaging solutions for products across industries, applications and
+            operational environments. We specialize in creating packaging systems tailored to product protection,
+            movement, storage and handling requirements.</p>
+          <p>With fully integrated in-house capabilities — from design and development to production — we deliver
+            solutions that combine customization, flexibility and deep industry understanding. One partner. Every
+            packaging need.</p>
+        </div>
+
+        <div class="about-learn-more-wrap reveal rd2">
+          <a href="about/" class="about-learn-more-link">Learn More <span
+              class="about-learn-more-arrow">→</span></a>
+        </div>
+      </div>
+      <div class="about-video-wrap reveal rd1">
+        <div class="about-video-holder">
+          <!-- Corner frame decorations -->
+          <div class="about-video-frame"></div>
+          <div class="about-video-frame-tr"></div>
+          <div class="about-video-frame-bl"></div>
+          <!-- IMAGE — replace src with your actual image path -->
+          <img class="about-vid" src="images\about1.jpg" alt="Rajvi Packaging — Facility &amp; Operations" />
+          <!-- Subtle overlay to keep corner decorations readable -->
+          <div class="about-vid-overlay"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="products-inner">
+      <div class="products-header reveal">
+        <div>
+          <div class="sect-label">Our Products</div>
+          <h2 class="products-heading">PACKAGING<br><span>CATEGORIES</span></h2>
+        </div>
+      </div>
+      <div class="products-grid-4col reveal rd1">
+
+        <a class="prod-grid-card" href="product-pp/">
+          <div class="prod-grid-card-img"><img src="images/pph.jpg" alt="PP Boxes &amp; Crates"></div>
+          <div class="prod-grid-card-body">
+            <div class="prod-grid-card-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8l9-5 9 5-9 5-9-5z" />
+                <path d="M3 8v8l9 5 9-5V8" />
+                <path d="M12 13v8" />
+              </svg>
+            </div>
+            <div class="prod-grid-card-name">PP Boxes &amp; Crates</div>
+            <div class="prod-grid-card-underline"></div>
+          </div>
+          <div class="prod-grid-card-corner"><span class="prod-grid-card-corner-arrow">→</span></div>
+        </a>
+
+        <a class="prod-grid-card" href="product-foam/">
+          <div class="prod-grid-card-img"><img src="images/foamh.jpg" alt="Foam &amp; Buffers"></div>
+          <div class="prod-grid-card-body">
+            <div class="prod-grid-card-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="4" height="4" rx="1" /><rect x="10" y="4" width="4" height="4" rx="1" /><rect x="16" y="4" width="4" height="4" rx="1" />
+                <rect x="4" y="10" width="4" height="4" rx="1" /><rect x="10" y="10" width="4" height="4" rx="1" /><rect x="16" y="10" width="4" height="4" rx="1" />
+                <rect x="4" y="16" width="4" height="4" rx="1" /><rect x="10" y="16" width="4" height="4" rx="1" /><rect x="16" y="16" width="4" height="4" rx="1" />
+              </svg>
+            </div>
+            <div class="prod-grid-card-name">Foam & Buffers</div>
+            <div class="prod-grid-card-underline"></div>
+          </div>
+          <div class="prod-grid-card-corner"><span class="prod-grid-card-corner-arrow">→</span></div>
+        </a>
+
+        <a class="prod-grid-card" href="product-bubble/">
+          <div class="prod-grid-card-img"><img src="images/airh.jpg" alt="Air Bubble"></div>
+          <div class="prod-grid-card-body">
+            <div class="prod-grid-card-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="6" r="2" /><circle cx="12" cy="6" r="2" /><circle cx="18" cy="6" r="2" />
+                <circle cx="6" cy="12" r="2" /><circle cx="12" cy="12" r="2" /><circle cx="18" cy="12" r="2" />
+                <circle cx="6" cy="18" r="2" /><circle cx="12" cy="18" r="2" /><circle cx="18" cy="18" r="2" />
+              </svg>
+            </div>
+            <div class="prod-grid-card-name">Air Bubble</div>
+            <div class="prod-grid-card-underline"></div>
+          </div>
+          <div class="prod-grid-card-corner"><span class="prod-grid-card-corner-arrow">→</span></div>
+        </a>
+
+        <a class="prod-grid-card" href="product-epe/">
+          <div class="prod-grid-card-img"><img src="images/epeh.jpg" alt="EPE Pouches"></div>
+          <div class="prod-grid-card-body">
+            <div class="prod-grid-card-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3l9 5-9 5-9-5 9-5z" />
+                <path d="M3 13l9 5 9-5" />
+              </svg>
+            </div>
+            <div class="prod-grid-card-name">EPE Pouches</div>
+            <div class="prod-grid-card-underline"></div>
+          </div>
+          <div class="prod-grid-card-corner"><span class="prod-grid-card-corner-arrow">→</span></div>
+        </a>
+
+      </div>
+      <div class="products-explore-row reveal rd2">
+        <a href="products/" class="btn btn-primary">
+          <span>Explore Products Catalogue</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section id="solutions">
+    <div class="solutions-inner">
+      <div class="solutions-top reveal">
+        <div>
+          <div class="sect-label" style="color:rgba(201,150,10,0.85);">What We Do</div>
+          <h2 class="solutions-heading">COMPLETE<br><span>SOLUTIONS</span></h2>
+        </div>
+      </div>
+      <div class="sol-list">
+        <div class="sol-item reveal" data-sol="0">
+          <div class="sol-item-bg"></div>
+          <div class="sol-item-head">
+            <span class="sol-title">Design Solutions</span>
+            <span class="sol-arrow">+</span>
+          </div>
+          <div class="sol-content">
+            <p class="sol-content-para">From product analysis to production-ready documentation — we engineer packaging
+              precisely matched to your product's geometry, weight, fragility and handling requirements. CAD-based
+              structural design, material selection, prototyping and full validation before any production commitment.
+            </p>
+            <div style="padding:0 0 32px 72px;z-index:2;position:relative">
+              <button class="sol-learn-more" onclick="window.location.href='solutions-design/'">Learn More
+                <span class="sol-learn-more-arrow">→</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sol-item reveal rd1" data-sol="1">
+          <div class="sol-item-bg"></div>
+          <div class="sol-item-head">
+            <span class="sol-title">Packaging Solutions</span>
+            <span class="sol-arrow">+</span>
+          </div>
+          <div class="sol-content">
+            <p class="sol-content-para">Our complete packaging range spans foam, PP corrugated, air bubble, adhesive
+              lamination, FLC pallets and specialty tapes — all manufactured in-house to specification and tested for
+              performance. One partner covering every packaging category, at any volume.</p>
+            <div style="padding:0 0 32px 72px;z-index:2;position:relative">
+              <button class="sol-learn-more" onclick="window.location.href='solutions-packaging/'">Learn
+                More
+                <span class="sol-learn-more-arrow">→</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sol-item reveal rd2" data-sol="2">
+          <div class="sol-item-bg"></div>
+          <div class="sol-item-head">
+            <span class="sol-title">Manufacturing Solutions</span>
+            <span class="sol-arrow">+</span>
+          </div>
+          <div class="sol-content">
+            <p class="sol-content-para">CNC precision cutting, adhesive lamination, die cutting, thermoforming and
+              assembly — all under one 27,000 sq.ft roof with 80+ trained professionals. Consistent quality from
+              prototype through high-volume production, with inspection at every stage before dispatch.</p>
+            <div style="padding:0 0 32px 72px;z-index:2;position:relative">
+              <button class="sol-learn-more" onclick="window.location.href='solutions-manufacturing/'">Learn
+                More
+                <span class="sol-learn-more-arrow">→</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- STANDARDS -->
+  <section id="standards">
+    <div class="standards-inner">
+      <div class="standards-top reveal">
+        <div>
+          <div class="sect-label">Our Standards</div>
+          <h2 class="standards-heading">QUALITY DRIVEN.<span>INDUSTRY FOCUSED.</span></h2>
+          <div class="standards-divider"><span class="sd-dash"></span><span class="sd-dot"></span><span class="sd-dash gold"></span></div>
+        </div>
+      </div>
+      <div class="standards-grid reveal rd1">
+        <div class="std-card">
+          <div class="std-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M11 2L18 6V11C18 14.87 14.87 18.5 11 20C7.13 18.5 4 14.87 4 11V6L11 2Z" stroke="currentColor"
+                stroke-width="1.5" />
+              <path d="M8 11L10 13L14 9" stroke="currentColor" stroke-width="1.5" />
+            </svg></div>
+          <div class="std-underline"></div>
+          <div class="std-title">Quality Excellence</div>
+          <div class="std-desc">Consistency, precision and reliability across every stage to ensure packaging solutions
+            meet required performance standards.</div>
+        </div>
+        <div class="std-card">
+          <div class="std-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M4 6h14M4 11h14M4 16h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <circle cx="17" cy="16" r="3" stroke="currentColor" stroke-width="1.5" />
+            </svg></div>
+          <div class="std-underline"></div>
+          <div class="std-title">Customer Commitment</div>
+          <div class="std-desc">We work closely with customers to understand products, applications and operational
+            needs, building long-term partnerships.</div>
+        </div>
+        <div class="std-card">
+          <div class="std-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+              <rect x="12" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+              <rect x="3" y="12" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+              <rect x="12" y="12" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+            </svg></div>
+          <div class="std-underline"></div>
+          <div class="std-title">Customization First</div>
+          <div class="std-desc">Every product is different. Our approach focuses on packaging tailored to dimensions,
+            protection needs and industry requirements.</div>
+        </div>
+        <div class="std-card">
+          <div class="std-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="1.5" />
+              <path d="M8 11l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg></div>
+          <div class="std-underline"></div>
+          <div class="std-title">Innovation &amp; Development</div>
+          <div class="std-desc">Continuously improving processes, materials and solution capabilities to deliver
+            practical and effective packaging systems.</div>
+        </div>
+        <div class="std-card">
+          <div class="std-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M4 10H18M14 6L18 10L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg></div>
+          <div class="std-underline"></div>
+          <div class="std-title">Operational Efficiency</div>
+          <div class="std-desc">Solutions developed considering handling, storage and product movement requirements for
+            better usability and performance.</div>
+        </div>
+        <div class="std-card">
+          <div class="std-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <path d="M11 3a8 8 0 100 16A8 8 0 0011 3z" stroke="currentColor" stroke-width="1.5" />
+              <path d="M8 11c0-1.7 1.3-3 3-3s3 1.3 3 3-1.3 3-3 3" stroke="currentColor" stroke-width="1.5" />
+            </svg></div>
+          <div class="std-underline"></div>
+          <div class="std-title">Responsible Growth</div>
+          <div class="std-desc">Supporting sustainable practices, efficient material usage and responsible packaging
+            development while maintaining performance.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOGS -->
+  <section id="blogs">
+    <div class="blogs-inner">
+      <div class="blogs-top reveal">
+        <div class="blogs-top-row">
+          <div>
+            <div class="sect-label" style="color:var(--gold);">Industry Insights</div>
+            <h2 class="blogs-heading">PACKAGING<br><span>KNOWLEDGE HUB</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="blogs-row reveal rd1">
+        <div id="blogs-container" class="blogs-grid">
+          <article class="blog-card" onclick="openBlogDetail(0)">
+            <picture class="blog-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1610891015188-5369212db097?q=80&w=1529&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Choosing the right foam for product protection" loading="lazy">
+              <div class="blog-card-overlay"></div>
+            </picture>
+            <div class="blog-card-body">
+              <div class="blog-card-date">June 01, 2026</div>
+              <div class="blog-card-title">Choosing the Right Foam for Product Protection</div>
+              <a href="#" class="blog-read-more" onclick="openBlogDetail(0);return false;">Read
+                Article <span class="blog-arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card" onclick="openBlogDetail(1)">
+            <picture class="blog-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1610891015188-5369212db097?q=80&w=1529&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Air bubble packaging comparison" loading="lazy">
+              <div class="blog-card-overlay"></div>
+            </picture>
+            <div class="blog-card-body">
+              <div class="blog-card-date">May 18, 2026</div>
+              <div class="blog-card-title">Air Bubble vs. Foam: Cost and Performance</div>
+              <a href="#" class="blog-read-more" onclick="openBlogDetail(1);return false;">Read
+                Article <span class="blog-arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="blog-card" onclick="openBlogDetail(2)">
+            <picture class="blog-card-img">
+              <img
+                src="https://images.unsplash.com/photo-1610891015188-5369212db097?q=80&w=1529&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Sustainable packaging options" loading="lazy">
+              <div class="blog-card-overlay"></div>
+            </picture>
+            <div class="blog-card-body">
+              <div class="blog-card-date">April 05, 2026</div>
+              <div class="blog-card-title">Sustainable Packaging: Recyclable Options</div>
+              <a href="#" class="blog-read-more" onclick="openBlogDetail(2);return false;">Read
+                Article <span class="blog-arrow">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:center;margin-top:40px;" class="reveal rd2">
+        <a href="blogs/" class="btn btn-outline" style="border-color:var(--gold);color:var(--gold);">
+          <span>View All Articles</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-info-only">
+
+      <!-- LEFT: Heading + CTA button -->
+      <div>
+        <div class="sect-label" style="color:var(--gold);margin-bottom:20px">— GET IN TOUCH</div>
+        <h2 class="contact-heading">LET'S BUILD THE RIGHT<br><span>PACKAGING SOLUTION</span></h2>
+        <p class="contact-subhead">Share your packaging requirements with our experts and discover custom-engineered
+          solutions, reliable manufacturing, and cost-effective pricing for bulk orders.</p>
+
+        <div class="contact-info-cta-wrap" style="display:flex;justify-content:flex-start;margin-top:32px;">
+          <a href="contact/" class="btn btn-primary">
+            <span>Share Your Requirements</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Map -->
+      <div class="contact-info-map-col">
+        <div class="contact-info-map-card">
+          <div class="contact-info-map-bar">
+            <span class="contact-info-map-label">India — Manufacturing &amp; Distribution</span>
+            <a href="https://maps.app.goo.gl/TVXp6Hbo8UsmbKKU6" target="_blank" rel="noopener"
+              class="contact-info-map-link">OPEN IN MAPS →</a>
+          </div>
+          <iframe class="contact-info-map-embed" src="https://www.google.com/maps?q=Vapi,Gujarat,India&output=embed"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <!-- TOP GRID: Logo col + 3 nav cols -->
+    <div class="footer-v2-top">
+
+      <!-- BRAND COL -->
+      <div class="footer-v2-brand">
+        <img src="images/logow.png" alt="Rajvi Packaging" class="footer-logo-img"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="footer-logo-fallback" style="display:none">
+          <div class="footer-brand-box"></div>
+          <div>
+            <div class="footer-brand-name">Rajvi Packaging</div>
+            <div class="footer-brand-sub">Design &middot; Protection &middot; Solutions</div>
+          </div>
+        </div>
+        <div class="footer-v2-divider"></div>
+        <p class="footer-v2-desc">Custom packaging solutions designed around your product requirements, industry needs
+          and protection goals.</p>
+      </div>
+
+      <!-- NAVIGATION COL -->
+      <div class="footer-v2-col">
+        <div class="footer-v2-col-line"></div>
+        <div class="footer-v2-col-title">Navigation</div>
+        <nav class="footer-v2-links">
+          <a href="about/">About Us</a>
+          <a href="products/">Products</a>
+          <a href="solutions/">Solutions</a>
+          <a href="blogs/">Blogs</a>
+          <a href="contact/">Contact Us</a>
+        </nav>
+      </div>
+
+      <!-- PRODUCTS COL -->
+      <div class="footer-v2-col">
+        <div class="footer-v2-col-line"></div>
+        <div class="footer-v2-col-title">Products</div>
+        <nav class="footer-v2-links">
+          <a href="product-foam/">Foam &amp; Buffers</a>
+          <a href="product-bubble/">Air Bubble</a>
+          <a href="product-pp/">PP Boxes &amp; Crates</a>
+          <a href="product-gaskets/">Foam Gaskets</a>
+          <a href="products/">View All Products</a>
+        </nav>
+      </div>
+
+      <!-- SOLUTIONS COL -->
+      <div class="footer-v2-col">
+        <div class="footer-v2-col-line"></div>
+        <div class="footer-v2-col-title">Solutions</div>
+        <nav class="footer-v2-links">
+          <a href="solutions-design/">Design Solutions</a>
+          <a href="solutions-packaging/">Packaging Solutions</a>
+          <a href="solutions-manufacturing/">Manufacturing Solutions</a>
+          <a href="contact/">Contact Us</a>
+        </nav>
+      </div>
+
+    </div>
+
+    <!-- CONTACT BAR -->
+    <div class="footer-v2-contact-bar">
+      <div class="footer-v2-contact-cell">
+        <svg class="fv2-contact-icon-plain" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" />
+          <circle cx="12" cy="10" r="3" />
+        </svg>
+        <a href="https://maps.app.goo.gl/Af2QqwHoCBzcbe7a7" target="_blank" rel="noopener" class="footer-v2-address-link">Plot No. 5 &amp; 6, City Survey No. NA/750/5 &amp; NA/750/6, Pipariya Faliya, Near Nitin Castings Ltd and
+          Aarth Industries, Village Karvad, Vapi 396195</a>
+      </div>
+      <div class="footer-v2-contact-cell footer-v2-contact-cell--border">
+        <svg class="fv2-contact-icon-plain" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+        </svg>
+        <a href="tel:+919274841995">+91 92748 41995</a>
+      </div>
+      <div class="footer-v2-contact-cell footer-v2-contact-cell--border">
+        <svg class="fv2-contact-icon-plain" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+        <a href="mailto:info@rajvipackaging.com">info@rajvipackaging.com</a>
+      </div>
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="footer-v2-bottom">
+      <div class="footer-v2-copy">&copy; 2025 Rajvi Packaging. All rights reserved.</div>
+      <div class="footer-v2-doms">
+        Made by
+        <a href="https://www.domsglobal.co/" target="_blank" rel="noopener" class="footer-doms-link">
+          <canvas id="footer-logo-canvas" class="footer-doms-canvas" width="220" height="124"
+            aria-label="Doms Global"></canvas>
+        </a>
+      </div>
+      <div class="footer-v2-legal">
+        <a href="privacy policy/">Privacy Policy</a>
+        <span class="fv2-legal-sep">|</span>
+        <a href="terms of use/">Terms of Use</a>
+        <span class="fv2-legal-sep">|</span>
+        <a href="sitemap/">Sitemap</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="shared.js"></script>
+</body>
+
+</html>
