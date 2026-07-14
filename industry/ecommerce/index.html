@@ -5,239 +5,1439 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-commerce Packaging Solutions | Rajvi Packaging</title>
-  <meta name="description" content="Air Bubble Sheets & Pouches for e-commerce and retail fulfillment. Lightweight, cost-effective last-mile protection that slashes return rates.">
+  <meta name="description" content="High-efficiency bubble wraps, custom pouches, and foam buffers designed to slash returns and shipping weights.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../shared.css">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    .ind-hero { position: relative; min-height: 88vh; display: flex; align-items: center; background: linear-gradient(135deg, #1a0a2e 0%, #3d1a7a 50%, #2d1060 100%); overflow: hidden; padding: 120px 60px 80px; }
-    .ind-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 50%, rgba(167,139,250,0.15) 0%, transparent 60%); pointer-events: none; }
-    .ind-hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 60px 60px; }
-    .ind-hero-inner { position: relative; max-width: 1200px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-    .ind-hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(167,139,250,0.15); border: 1px solid rgba(167,139,250,0.4); color: #a78bfa; font-family: 'Poppins',sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 6px 16px; border-radius: 100px; margin-bottom: 24px; }
-    .ind-hero-badge::before { content: '●'; font-size: 8px; }
-    .ind-hero-title { font-family: 'Sora',sans-serif; font-size: clamp(36px,5vw,58px); font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 20px; }
-    .ind-hero-title span { color: #a78bfa; }
-    .ind-hero-subtitle { font-family: 'Poppins',sans-serif; font-size: 17px; color: rgba(255,255,255,0.72); line-height: 1.7; margin-bottom: 40px; max-width: 520px; }
-    .ind-hero-cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
-    .btn-ind-primary { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #6d28d9, #8b5cf6); color: #fff; font-family: 'Poppins',sans-serif; font-size: 14px; font-weight: 700; padding: 14px 32px; border-radius: 6px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 20px rgba(139,92,246,0.4); }
-    .btn-ind-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(139,92,246,0.5); }
-    .btn-ind-secondary { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); color: #fff; font-family: 'Poppins',sans-serif; font-size: 14px; font-weight: 600; padding: 14px 28px; border-radius: 6px; text-decoration: none; transition: background 0.2s; }
-    .btn-ind-secondary:hover { background: rgba(255,255,255,0.14); }
-    .ind-hero-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: rgba(255,255,255,0.08); border-radius: 12px; overflow: hidden; margin-top: 48px; }
-    .ind-stat { background: rgba(255,255,255,0.04); padding: 24px 20px; text-align: center; }
-    .ind-stat-num { font-family: 'Sora',sans-serif; font-size: 32px; font-weight: 800; color: #a78bfa; }
-    .ind-stat-label { font-family: 'Poppins',sans-serif; font-size: 11px; color: rgba(255,255,255,0.6); margin-top: 4px; }
-    .ind-problem-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 40px; backdrop-filter: blur(12px); }
-    .ind-problem-label { font-family: 'Poppins',sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #f87171; margin-bottom: 16px; }
-    .ind-problem-title { font-family: 'Sora',sans-serif; font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 20px; line-height: 1.35; }
-    .ind-problem-list { list-style: none; }
-    .ind-problem-list li { display: flex; align-items: flex-start; gap: 12px; font-family: 'Poppins',sans-serif; font-size: 14px; color: rgba(255,255,255,0.75); padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.07); line-height: 1.5; }
-    .ind-problem-list li:last-child { border-bottom: none; }
-    .ind-problem-list li::before { content: '!'; flex-shrink: 0; width: 20px; height: 20px; background: rgba(248,113,113,0.2); border: 1px solid rgba(248,113,113,0.4); color: #f87171; border-radius: 50%; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; margin-top: 1px; }
-    .ind-solution { padding: 100px 60px; background: #f5f0ff; }
-    .ind-solution-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-    .ind-section-label { font-family: 'Poppins',sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: #7c3aed; margin-bottom: 14px; }
-    .ind-section-title { font-family: 'Sora',sans-serif; font-size: clamp(28px,3.5vw,42px); font-weight: 800; color: #1a0a2e; line-height: 1.2; margin-bottom: 20px; }
-    .ind-section-desc { font-family: 'Poppins',sans-serif; font-size: 16px; color: #4a5568; line-height: 1.75; margin-bottom: 32px; }
-    .ind-solution-features { display: flex; flex-direction: column; gap: 16px; }
-    .ind-feature { display: flex; gap: 16px; align-items: flex-start; padding: 20px; background: #fff; border-radius: 10px; border: 1px solid #ddd6fe; transition: box-shadow 0.2s; }
-    .ind-feature:hover { box-shadow: 0 4px 24px rgba(124,58,237,0.1); }
-    .ind-feature-icon { width: 44px; height: 44px; background: linear-gradient(135deg, #6d28d9, #8b5cf6); border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px; }
-    .ind-feature-title { font-family: 'Poppins',sans-serif; font-size: 15px; font-weight: 600; color: #1a202c; margin-bottom: 4px; }
-    .ind-feature-desc { font-family: 'Poppins',sans-serif; font-size: 13px; color: #718096; line-height: 1.6; }
-    .ind-solution-card { background: linear-gradient(135deg, #1a0a2e 0%, #3d1a7a 100%); border-radius: 20px; padding: 50px 40px; color: #fff; position: relative; overflow: hidden; }
-    .ind-solution-card::before { content: ''; position: absolute; top: -40px; right: -40px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(167,139,250,0.2) 0%, transparent 70%); }
-    .ind-solution-card-title { font-family: 'Sora',sans-serif; font-size: 26px; font-weight: 700; margin-bottom: 8px; position: relative; }
-    .ind-solution-card-sub { font-family: 'Poppins',sans-serif; font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 32px; position: relative; }
-    .ind-spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; position: relative; }
-    .ind-spec { background: rgba(255,255,255,0.08); border-radius: 10px; padding: 18px 16px; border: 1px solid rgba(255,255,255,0.1); }
-    .ind-spec-val { font-family: 'Sora',sans-serif; font-size: 22px; font-weight: 700; color: #a78bfa; }
-    .ind-spec-label { font-family: 'Poppins',sans-serif; font-size: 11px; color: rgba(255,255,255,0.55); margin-top: 4px; }
-    .ind-benefits { padding: 100px 60px; background: #fff; }
-    .ind-benefits-inner { max-width: 1200px; margin: 0 auto; }
-    .ind-benefits-header { text-align: center; margin-bottom: 60px; }
-    .ind-benefits-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
-    .ind-benefit-card { padding: 36px 28px; border-radius: 16px; border: 1px solid #ddd6fe; background: #fff; position: relative; overflow: hidden; transition: transform 0.25s, box-shadow 0.25s; }
-    .ind-benefit-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(124,58,237,0.1); }
-    .ind-benefit-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #6d28d9, #a78bfa); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
-    .ind-benefit-card:hover::after { transform: scaleX(1); }
-    .ind-benefit-icon { font-size: 36px; margin-bottom: 20px; }
-    .ind-benefit-title { font-family: 'Sora',sans-serif; font-size: 18px; font-weight: 700; color: #1a202c; margin-bottom: 10px; }
-    .ind-benefit-desc { font-family: 'Poppins',sans-serif; font-size: 14px; color: #718096; line-height: 1.7; }
-    .ind-form-section { padding: 100px 60px; background: linear-gradient(135deg, #1a0a2e 0%, #3d1a7a 100%); position: relative; overflow: hidden; }
-    .ind-form-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 80% 20%, rgba(167,139,250,0.1) 0%, transparent 60%); pointer-events: none; }
-    .ind-form-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; position: relative; }
-    .ind-form-left h2 { font-family: 'Sora',sans-serif; font-size: clamp(28px,3.5vw,40px); font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 20px; }
-    .ind-form-left p { font-family: 'Poppins',sans-serif; font-size: 15px; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 40px; }
-    .ind-trust-items { display: flex; flex-direction: column; gap: 14px; }
-    .ind-trust-item { display: flex; align-items: center; gap: 12px; font-family: 'Poppins',sans-serif; font-size: 13px; color: rgba(255,255,255,0.8); }
-    .ind-trust-item::before { content: '✓'; width: 22px; height: 22px; background: rgba(167,139,250,0.2); border: 1px solid rgba(167,139,250,0.5); color: #a78bfa; border-radius: 50%; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .ind-form-card { background: #fff; border-radius: 16px; padding: 40px; box-shadow: 0 32px 80px rgba(0,0,0,0.25); }
-    .ind-form-card h3 { font-family: 'Sora',sans-serif; font-size: 22px; font-weight: 700; color: #1a202c; margin-bottom: 6px; }
-    .ind-form-card p { font-family: 'Poppins',sans-serif; font-size: 13px; color: #718096; margin-bottom: 28px; }
-    .ind-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
-    .ind-form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
-    .ind-form-group label { font-family: 'Poppins',sans-serif; font-size: 12px; font-weight: 600; color: #4a5568; letter-spacing: 0.05em; text-transform: uppercase; }
-    .ind-form-group input, .ind-form-group textarea { font-family: 'Poppins',sans-serif; font-size: 14px; color: #1a202c; border: 1.5px solid #e2e8f0; border-radius: 8px; padding: 12px 16px; outline: none; transition: border-color 0.2s, box-shadow 0.2s; background: #f8fafc; }
-    .ind-form-group input:focus, .ind-form-group textarea:focus { border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(124,58,237,0.1); background: #fff; }
-    .ind-form-group textarea { resize: vertical; min-height: 100px; }
-    .ind-submit-btn { width: 100%; padding: 15px; background: linear-gradient(135deg, #6d28d9, #8b5cf6); color: #fff; font-family: 'Poppins',sans-serif; font-size: 15px; font-weight: 700; border: none; border-radius: 8px; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
-    .ind-submit-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(109,40,217,0.4); }
-    .ind-form-privacy { font-family: 'Poppins',sans-serif; font-size: 11px; color: #a0aec0; text-align: center; margin-top: 12px; }
-    @media (max-width: 900px) { .ind-hero-inner, .ind-solution-inner, .ind-form-inner { grid-template-columns: 1fr; gap: 40px; } .ind-hero, .ind-solution, .ind-benefits, .ind-form-section { padding: 80px 24px 60px; } .ind-benefits-grid { grid-template-columns: 1fr; } .ind-form-row { grid-template-columns: 1fr; } }
+    :root {{
+      --ind-primary: #6d28d9;
+      --ind-accent: #8b5cf6;
+      --ind-dark: #4c1d95;
+      --ind-light: #f5f3ff;
+    }}
+
+    * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+
+    /* ── HERO ── */
+    .ind-hero {{
+      position: relative;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, var(--ind-dark) 0%, var(--ind-primary) 50%, var(--ind-dark) 100%);
+      overflow: hidden;
+      padding: 120px 60px 80px;
+    }}
+    .ind-hero::before {{
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(139,92,246, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }}
+    .ind-hero-grid {{
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }}
+    .ind-hero-inner {{
+      position: relative;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }}
+    .ind-hero-badge {{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(139,92,246, 0.15);
+      border: 1px solid rgba(139,92,246, 0.4);
+      color: var(--ind-accent);
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }}
+    .ind-hero-badge::before {{ content: '●'; font-size: 8px; }}
+    .ind-hero-title {{
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(32px, 4.5vw, 54px);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }}
+    .ind-hero-title span {{ color: var(--ind-accent); }}
+    .ind-hero-subtitle {{
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      margin-bottom: 40px;
+      max-width: 520px;
+    }}
+    .ind-hero-cta-row {{
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }}
+    .btn-ind-primary {{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--ind-accent);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }}
+    .btn-ind-primary:hover {{ transform: translateY(-2px); box-shadow: 0 8px 32px rgba(139,92,246, 0.4); }}
+    .btn-ind-secondary {{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }}
+    .btn-ind-secondary:hover {{ background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.4); }}
+
+    /* Hero stats */
+    .ind-hero-stats {{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-top: 48px;
+    }}
+    .ind-stat {{
+      background: rgba(255,255,255,0.04);
+      padding: 20px 16px;
+      text-align: center;
+    }}
+    .ind-stat-num {{
+      font-family: 'Sora', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--ind-accent);
+    }}
+    .ind-stat-label {{
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      color: rgba(255,255,255,0.6);
+      margin-top: 4px;
+      letter-spacing: 0.05em;
+    }}
+
+    /* Hero right — problem card */
+    .ind-problem-card {{
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 36px;
+      backdrop-filter: blur(12px);
+    }}
+    .ind-problem-label {{
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #f87171;
+      margin-bottom: 16px;
+    }}
+    .ind-problem-title {{
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 20px;
+      line-height: 1.35;
+    }}
+    .ind-problem-list {{
+      list-style: none;
+    }}
+    .ind-problem-list li {{
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 13.5px;
+      color: rgba(255,255,255,0.75);
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      line-height: 1.5;
+    }}
+    .ind-problem-list li:last-child {{ border-bottom: none; }}
+    .ind-problem-list li::before {{
+      content: '!';
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      background: rgba(248,113,113,0.2);
+      border: 1px solid rgba(248,113,113,0.4);
+      color: #f87171;
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }}
+
+    /* ── OVERVIEW & SECTION HEADERS ── */
+    .ind-overview {{
+      padding: 100px 60px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }}
+    .ind-overview-inner {{
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }}
+    .ind-section-label {{
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--ind-accent);
+      margin-bottom: 14px;
+    }}
+    .ind-section-title {{
+      font-family: 'Sora', sans-serif;
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 800;
+      color: var(--g1);
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }}
+    .ind-overview-text {{
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.8;
+    }}
+
+    /* ── CHALLENGES SECTION ── */
+    .ind-challenges-sec {{
+      padding: 100px 60px;
+      background: var(--bg);
+    }}
+    .ind-challenges-inner {{
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }}
+    .ind-challenges-grid {{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }}
+    .ind-challenge-card {{
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 30px;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }}
+    .ind-challenge-card:hover {{
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+    }}
+    .ind-challenge-icon {{
+      font-size: 32px;
+      margin-bottom: 18px;
+    }}
+    .ind-challenge-card-title {{
+      font-family: 'Sora', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--g1);
+      margin-bottom: 12px;
+    }}
+    .ind-challenge-card-desc {{
+      font-family: 'Poppins', sans-serif;
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.6;
+    }}
+
+    /* ── SOLUTIONS SECTION ── */
+    .ind-solutions-sec {{
+      padding: 100px 60px;
+      background: var(--white);
+    }}
+    .ind-solutions-inner {{
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }}
+    .ind-mapping-box {{
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 40px;
+      margin: 40px 0 60px;
+    }}
+    .ind-mapping-title {{
+      font-family: 'Sora', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--g1);
+      margin-bottom: 24px;
+      text-align: center;
+    }}
+    .ind-mapping-table {{
+      width: 100%;
+      border-collapse: collapse;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14.5px;
+    }}
+    .ind-mapping-table th, .ind-mapping-table td {{
+      padding: 16px 20px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }}
+    .ind-mapping-table th {{
+      font-weight: 700;
+      color: var(--g1);
+      background: rgba(10, 61, 44, 0.03);
+    }}
+    .ind-mapping-table td {{
+      color: var(--muted);
+    }}
+    .ind-solutions-grid {{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }}
+    .ind-solution-card {{
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }}
+    .ind-sol-body {{
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }}
+    .ind-sol-title {{
+      font-family: 'Sora', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--g1);
+      margin-bottom: 12px;
+    }}
+    .ind-sol-desc {{
+      font-family: 'Poppins', sans-serif;
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }}
+    .ind-sol-benefits {{
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 12px 16px;
+      border-radius: 6px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      color: var(--g1);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }}
+    .btn-sol-link {{
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+      background: var(--g1);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }}
+    .btn-sol-link:hover {{
+      background: var(--g2);
+    }}
+
+    /* ── WHY CHOOSE RAJVI ── */
+    .ind-why-sec {{
+      padding: 100px 60px;
+      background: var(--bg2);
+    }}
+    .ind-why-inner {{
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }}
+    .ind-why-grid {{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }}
+    .ind-why-card {{
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      text-align: center;
+    }}
+    .ind-why-title {{
+      font-family: 'Sora', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--g1);
+      margin-top: 12px;
+    }}
+
+    /* ── PACKAGING PROCESS ── */
+    .ind-process-sec {{
+      padding: 100px 60px;
+      background: var(--white);
+    }}
+    .ind-process-inner {{
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }}
+    .ind-process-flow {{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      margin-top: 60px;
+      position: relative;
+    }}
+    .ind-process-step {{
+      text-align: center;
+      position: relative;
+      background: var(--bg);
+      padding: 30px 20px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }}
+    .ind-step-num {{
+      width: 36px;
+      height: 36px;
+      background: var(--g1);
+      color: #fff;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }}
+    .ind-process-step::after {{
+      content: '→';
+      position: absolute;
+      right: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: var(--gold);
+      z-index: 2;
+    }}
+    .ind-process-step:last-child::after {{
+      display: none;
+    }}
+    .ind-step-title {{
+      font-family: 'Sora', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--g1);
+    }}
+
+    /* ── APPLICATIONS ── */
+    .ind-apps-sec {{
+      padding: 100px 60px;
+      background: var(--bg);
+    }}
+    .ind-apps-inner {{
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }}
+    .ind-apps-grid {{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }}
+    .ind-app-card {{
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      text-align: center;
+    }}
+    .ind-app-icon {{ font-size: 32px; margin-bottom: 12px; }}
+    .ind-app-title {{
+      font-family: 'Sora', sans-serif;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--g1);
+    }}
+
+    /* ── INDUSTRY SEGMENTS ── */
+    .ind-segments-sec {{
+      padding: 100px 60px;
+      background: var(--white);
+    }}
+    .ind-segments-inner {{
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }}
+    .ind-segments-grid {{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }}
+    .ind-segment-item {{
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--g1);
+    }}
+
+    /* ── SUCCESS METRICS ── */
+    .ind-metrics-sec {{
+      padding: 80px 60px;
+      background: var(--g1);
+      color: #fff;
+    }}
+    .ind-metrics-inner {{
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      text-align: center;
+    }}
+    .ind-metric-num {{
+      font-family: 'Sora', sans-serif;
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }}
+    .ind-metric-label {{
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+    }}
+
+    /* ── FEATURED PRODUCTS ── */
+    .ind-featured-sec {{
+      padding: 100px 60px;
+      background: var(--white);
+    }}
+    .ind-featured-inner {{
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }}
+    .ind-featured-grid {{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }}
+    .ind-featured-card {{
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }}
+    .ind-featured-card h4 {{
+      font-family: 'Sora', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--g1);
+      margin-bottom: 16px;
+    }}
+    .btn-featured-link {{
+      margin-top: auto;
+      display: block;
+      padding: 10px;
+      border: 1px solid var(--g1);
+      color: var(--g1);
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 12.5px;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: background 0.2s, color 0.2s;
+    }}
+    .btn-featured-link:hover {{
+      background: var(--g1);
+      color: #fff;
+    }}
+
+    /* ── FAQs ── */
+    .ind-faq-sec {{
+      padding: 100px 60px;
+      background: var(--bg);
+    }}
+    .ind-faq-inner {{
+      max-width: 800px;
+      margin: 0 auto;
+    }}
+    .faq-grid {{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 48px;
+    }}
+    .faq-item {{
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }}
+    .faq-trigger {{
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      text-align: left;
+      font-family: 'Sora', sans-serif;
+      font-size: 15.5px;
+      font-weight: 600;
+      color: var(--g1);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }}
+    .faq-content {{
+      padding: 0 24px 20px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+      display: none;
+    }}
+    .faq-item.active .faq-content {{ display: block; }}
+    .faq-item.active .faq-icon {{ transform: rotate(45deg); }}
+    .faq-icon {{ transition: transform 0.2s; font-size: 18px; color: var(--gold); }}
+
+    /* ── RESOURCES ── */
+    .ind-resources-sec {{
+      padding: 100px 60px;
+      background: var(--white);
+    }}
+    .ind-resources-inner {{
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }}
+    .ind-resources-grid {{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 48px;
+    }}
+    .ind-resource-card {{
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 30px;
+    }}
+    .ind-resource-title {{
+      font-family: 'Sora', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--g1);
+      margin-bottom: 12px;
+    }}
+    .ind-resource-desc {{
+      font-family: 'Poppins', sans-serif;
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }}
+    .btn-resource {{
+      display: inline-block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gold);
+      text-decoration: none;
+    }}
+
+    /* ── INQUIRY SECTION ── */
+    .ind-inquiry-sec {{
+      padding: 100px 60px;
+      background: linear-gradient(135deg, var(--ind-dark) 0%, var(--ind-primary) 100%);
+      color: #fff;
+    }}
+    .ind-inquiry-inner {{
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 80px;
+      align-items: start;
+    }}
+    .ind-inquiry-left h2 {{
+      font-family: 'Sora', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }}
+    .ind-inquiry-left p {{
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+    }}
+    .ind-form-card {{
+      background: var(--white);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+    }}
+    .ind-form-card h3 {{
+      font-family: 'Sora', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--g1);
+      margin-bottom: 24px;
+    }}
+    .ind-form-group {{
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 16px;
+    }}
+    .ind-form-group label {{
+      font-family: 'Poppins', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }}
+    .ind-form-group input,
+    .ind-form-group select,
+    .ind-form-group textarea {{
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      color: var(--text);
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      background: #f8fafc;
+      outline: none;
+    }}
+    .ind-form-group input:focus,
+    .ind-form-group select:focus,
+    .ind-form-group textarea:focus {{
+      border-color: var(--ind-primary);
+      background: #fff;
+    }}
+    .ind-form-group textarea {{
+      resize: vertical;
+      min-height: 100px;
+    }}
+    .ind-submit-btn {{
+      width: 100%;
+      padding: 15px;
+      background: var(--g1);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14.5px;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }}
+    .ind-submit-btn:hover {{
+      background: var(--g2);
+    }}
+
+    /* ── FOOTER CTA ── */
+    .ind-footer-cta {{
+      background: var(--bg2);
+      padding: 60px;
+      text-align: center;
+    }}
+    .ind-footer-cta-inner {{
+      max-width: 600px;
+      margin: 0 auto;
+    }}
+    .ind-footer-cta-title {{
+      font-family: 'Sora', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--g1);
+      margin-bottom: 24px;
+    }}
+    .ind-footer-cta-btns {{
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }}
+
+    @media (max-width: 900px) {
+      .ind-hero-inner, .ind-inquiry-inner {{ grid-template-columns: 1fr; gap: 40px; }}
+      .ind-hero {{ padding: 100px 24px 60px; }}
+      .ind-overview, .ind-challenges-sec, .ind-solutions-sec, .ind-why-sec, .ind-process-sec, .ind-apps-sec, .ind-segments-sec, .ind-metrics-sec, .ind-featured-sec, .ind-faq-sec, .ind-resources-sec, .ind-inquiry-sec {{ padding: 60px 24px; }}
+      .ind-challenges-grid, .ind-solutions-grid, .ind-why-grid, .ind-process-flow, .ind-apps-grid, .ind-segments-grid, .ind-featured-grid, .ind-resources-grid {{ grid-template-columns: 1fr; }}
+      .ind-metrics-inner {{ grid-template-columns: 1fr 1fr; gap: 24px; }}
+      .ind-process-step::after {{ content: '↓'; right: auto; left: 50%; top: auto; bottom: -20px; transform: translateX(-50%); }}
+    }
   </style>
 </head>
 <body>
+  <!-- NAV -->
   <div class="inner-page-header">
     <div class="inner-page-header-left">
-      <a class="logo" href="../../"><img src="../../images/logo.png" alt="Rajvi Packaging" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-fallback" style="display:none"><div class="logo-box"></div><div><div class="logo-text">Rajvi Packaging</div><div class="logo-sub">Design &middot; Protection &middot; Solutions</div></div></div></a>
+      <a class="logo" href="../../">
+        <img src="../../images/logo.png" alt="Rajvi Packaging" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="logo-fallback" style="display:none">
+          <div class="logo-box"></div>
+          <div><div class="logo-text">Rajvi Packaging</div><div class="logo-sub">Design &middot; Protection &middot; Solutions</div></div>
+        </div>
+      </a>
     </div>
     <nav class="inner-page-header-nav">
-      <a href="../../about/">About Us</a><a href="../../products/">Products</a><a href="../../solutions/">Solutions</a><a href="../../blogs/">Blogs</a><a href="../../contact/" class="inner-nav-cta">Contact Us</a>
+      <a href="../../about/">About Us</a>
+      <a href="../../products/">Products</a>
+      <a href="../../solutions/">Solutions</a>
+      <a href="../../blogs/">Blogs</a>
+      <a href="../../contact/" class="inner-nav-cta">Contact Us</a>
     </nav>
   </div>
+
   <main>
+    <!-- 1. HERO SECTION -->
     <section class="ind-hero">
       <div class="ind-hero-grid"></div>
       <div class="ind-hero-inner">
         <div>
-          <div class="ind-hero-badge">E-commerce &amp; Retail Fulfillment</div>
-          <h1 class="ind-hero-title">Cut Returns.<br><span>Protect Profits.</span></h1>
-          <p class="ind-hero-subtitle">High return rates from damaged last-mile deliveries are bleeding your margins. Rajvi Packaging's Air Bubble Sheets & Pouches offer lightweight, scalable protection that keeps customers happy and returns low.</p>
+          <div class="ind-hero-badge">E-commerce Industry</div>
+          <h1 class="ind-hero-title">Packaging Solutions for the <span>E-commerce Industry</span></h1>
+          <p class="ind-hero-subtitle">Rajvi Packaging designs high-strength air bubble bags, EPE sheets, and protective fillers to speed up D2C packing benches and eliminate shipping damage.</p>
           <div class="ind-hero-cta-row">
-            <a href="#get-quote" class="btn-ind-primary">Get Bulk Quote →</a>
+            <a href="#inquiry" class="btn-ind-primary">Request a Quote</a>
             <a href="../../product-bubble/" class="btn-ind-secondary">See Bubble Products</a>
           </div>
           <div class="ind-hero-stats">
-            <div class="ind-stat"><div class="ind-stat-num">80%</div><div class="ind-stat-label">Fewer Returns</div></div>
-            <div class="ind-stat"><div class="ind-stat-num">40%</div><div class="ind-stat-label">Lower Pack Cost</div></div>
-            <div class="ind-stat"><div class="ind-stat-num">Bulk</div><div class="ind-stat-label">Supply Available</div></div>
+            <div class="ind-stat"><div class="ind-stat-num">80%</div><div class="ind-stat-label">Less Returns</div></div>
+            <div class="ind-stat"><div class="ind-stat-num">40%</div><div class="ind-stat-label">Lower Packing Cost</div></div>
+            <div class="ind-stat"><div class="ind-stat-num">Bulk</div><div class="ind-stat-label">Supply Ready</div></div>
           </div>
         </div>
         <div>
           <div class="ind-problem-card">
             <div class="ind-problem-label">⚠ Industry Pain Points</div>
-            <div class="ind-problem-title">What's Hurting Your Last-Mile Fulfillment?</div>
+            <div class="ind-problem-title">What's Threatening Your E-commerce Shipments?</div>
             <ul class="ind-problem-list">
-              <li>Products damaged during courier handling generate costly returns and refunds</li>
-              <li>Heavy packaging inflates shipping costs and squeezes already-thin margins</li>
-              <li>Inconsistent packing quality leads to variable damage rates across SKUs</li>
-              <li>Customer unboxing experience suffers with cheap, inadequate wrapping</li>
-              <li>Warehouse packing time is high due to complex or inflexible packaging formats</li>
+                            <li>Parcels dropped onto hard concrete during sorting hubs cause cosmetics and electronics to shatter.</li>
+              <li>Heavy packaging or unnecessarily large boxes inflate dimensional weight costs and squeeze D2C margins.</li>
+              <li>Fulfillment teams wrapping products in flat sheets manually wastes hours during peak sales seasons.</li>
+              <li>Messy tape and over-wrapped crumpled paper look unprofessional and lead to negative customer reviews.</li>
+              <li>Manual wrapping results in varying protective layers per box, causing unpredictable transit defect rates.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="ind-solution">
-      <div class="ind-solution-inner">
-        <div>
-          <div class="ind-section-label">Our Solution</div>
-          <h2 class="ind-section-title">Air Bubble Sheets &amp; Pouches for E-commerce</h2>
-          <p class="ind-section-desc">Rajvi Packaging supplies high-quality air bubble wrap in rolls, sheets, and pre-formed pouches — designed for fast, consistent packing at scale. Lightweight enough to keep shipping costs low, tough enough to protect through the roughest courier routes.</p>
-          <div class="ind-solution-features">
-            <div class="ind-feature">
-              <div class="ind-feature-icon">🫧</div>
-              <div class="ind-feature-body"><div class="ind-feature-title">Multi-Layer Cushioning</div><div class="ind-feature-desc">Dual-layer bubble structures provide superior protection compared to single-layer alternatives — ideal for fragile and medium-weight items.</div></div>
-            </div>
-            <div class="ind-feature">
-              <div class="ind-feature-icon">⚡</div>
-              <div class="ind-feature-body"><div class="ind-feature-title">Warehouse-Optimised Formats</div><div class="ind-feature-desc">Pre-cut sheets, perforated rolls, and ready-made pouches reduce packing time and labour cost in high-volume fulfilment centres.</div></div>
-            </div>
-            <div class="ind-feature">
-              <div class="ind-feature-icon">📦</div>
-              <div class="ind-feature-body"><div class="ind-feature-title">Custom Sizing &amp; Branding</div><div class="ind-feature-desc">Bubble pouches and wraps available in any dimension, with optional printed branding to enhance unboxing experience.</div></div>
-            </div>
+
+    <!-- 2. INDUSTRY OVERVIEW -->
+    <section class="ind-overview">
+      <div class="ind-overview-inner">
+        <div class="ind-section-label">Industry Overview</div>
+        <h2 class="ind-section-title">Protective Packaging for E-commerce</h2>
+        <p class="ind-overview-text">Last-mile e-commerce courier networks subject parcels to intense drop and vibration stress. Online brands require protective, lightweight, and fast-to-pack materials to prevent damaged returns, lower DIM weight carrier fees, and ensure an excellent customer unboxing experience.</p>
+      </div>
+    </section>
+
+    <!-- 3. INDUSTRY CHALLENGES -->
+    <section class="ind-challenges-sec">
+      <div class="ind-challenges-inner">
+        <div style="text-align:center; margin-bottom: 40px;">
+          <div class="ind-section-label">Challenges</div>
+          <h2 class="ind-section-title">Key Transport &amp; Storage Hazards</h2>
+        </div>
+        <div class="ind-challenges-grid">
+                    <div class="ind-challenge-card">
+            <div class="ind-challenge-icon">💔</div>
+            <div class="ind-challenge-card-title">Transit Damaged Returns</div>
+            <div class="ind-challenge-card-desc">Parcels dropped onto hard concrete during sorting hubs cause cosmetics and electronics to shatter.</div>
+          </div>\n          <div class="ind-challenge-card">
+            <div class="ind-challenge-icon">⚖️</div>
+            <div class="ind-challenge-card-title">High Courier Freight Costs</div>
+            <div class="ind-challenge-card-desc">Heavy packaging or unnecessarily large boxes inflate dimensional weight costs and squeeze D2C margins.</div>
+          </div>\n          <div class="ind-challenge-card">
+            <div class="ind-challenge-icon">⏱️</div>
+            <div class="ind-challenge-card-title">Slow Packing Bench Cycles</div>
+            <div class="ind-challenge-card-desc">Fulfillment teams wrapping products in flat sheets manually wastes hours during peak sales seasons.</div>
+          </div>\n          <div class="ind-challenge-card">
+            <div class="ind-challenge-icon">🎁</div>
+            <div class="ind-challenge-card-title">Poor Unboxing Experience</div>
+            <div class="ind-challenge-card-desc">Messy tape and over-wrapped crumpled paper look unprofessional and lead to negative customer reviews.</div>
+          </div>\n          <div class="ind-challenge-card">
+            <div class="ind-challenge-icon">📦</div>
+            <div class="ind-challenge-card-title">Inconsistent Packing Quality</div>
+            <div class="ind-challenge-card-desc">Manual wrapping results in varying protective layers per box, causing unpredictable transit defect rates.</div>
+          </div>\n          <div class="ind-challenge-card">
+            <div class="ind-challenge-icon">🌧️</div>
+            <div class="ind-challenge-card-title">Water Damage on Doorstep</div>
+            <div class="ind-challenge-card-desc">Packages left on doorsteps or delivered in the rain get soaked, ruining inner boxes.</div>
           </div>
         </div>
-        <div>
-          <div class="ind-solution-card">
-            <div class="ind-solution-card-title">Bubble Wrap Specifications</div>
-            <div class="ind-solution-card-sub">E-commerce optimised — bulk supply available</div>
-            <div class="ind-spec-grid">
-              <div class="ind-spec"><div class="ind-spec-val">10mm</div><div class="ind-spec-label">Bubble Diameter</div></div>
-              <div class="ind-spec"><div class="ind-spec-val">2-ply</div><div class="ind-spec-label">Standard Layer</div></div>
-              <div class="ind-spec"><div class="ind-spec-val">Rolls</div><div class="ind-spec-label">& Sheets</div></div>
-              <div class="ind-spec"><div class="ind-spec-val">Pouches</div><div class="ind-spec-label">Pre-formed</div></div>
-              <div class="ind-spec"><div class="ind-spec-val">Custom</div><div class="ind-spec-label">Print Available</div></div>
-              <div class="ind-spec"><div class="ind-spec-val">Bulk</div><div class="ind-spec-label">MOQ Flexible</div></div>
+      </div>
+    </section>
+
+    <!-- 4. RAJVI PACKAGING SOLUTIONS -->
+    <section class="ind-solutions-sec">
+      <div class="ind-solutions-inner">
+        <div style="text-align:center;">
+          <div class="ind-section-label">Solutions</div>
+          <h2 class="ind-section-title">Mapped to Customer Needs</h2>
+        </div>
+        
+        <div class="ind-mapping-box">
+          <div class="ind-mapping-title">Challenge vs. Product Fitment Matrix</div>
+          <table class="ind-mapping-table">
+            <thead>
+              <tr>
+                <th>Customer Challenge</th>
+                <th>Recommended Rajvi Product</th>
+              </tr>
+            </thead>
+            <tbody>
+                            <tr>
+                <td><strong>Surface Protection</strong></td>
+                <td>Air Bubble Wrap</td>
+              </tr>\n              <tr>
+                <td><strong>Cushioning</strong></td>
+                <td>EPE Foam Sheets</td>
+              </tr>\n              <tr>
+                <td><strong>Shock Absorption</strong></td>
+                <td>Pre-formed Pouches</td>
+              </tr>\n              <tr>
+                <td><strong>Component Protection</strong></td>
+                <td>Foam Buffers</td>
+              </tr>\n              <tr>
+                <td><strong>Secure Sealing</strong></td>
+                <td>Self-Adhesive Bags</td>
+              </tr>\n              <tr>
+                <td><strong>Heavy Product Support</strong></td>
+                <td>PP Box Inserts</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="ind-solutions-grid">
+                    <div class="ind-solution-card">
+            <div class="ind-sol-body">
+              <div class="ind-sol-title">Pre-formed Air Bubble Pouches</div>
+              <div class="ind-sol-desc">Bags made of high-quality bubble sheets with optional peel-and-seal flaps for super fast order prep.</div>
+              <div class="ind-sol-benefits">🔑 Key Benefits: Saves 30 seconds per package, neat presentation</div>
+              <a href="../../product-bubble/" class="btn-sol-link">View Product Page</a>
+            </div>
+          </div>\n          <div class="ind-solution-card">
+            <div class="ind-sol-body">
+              <div class="ind-sol-title">Custom EPE Foam Sheets</div>
+              <div class="ind-sol-desc">Lightweight polyethylene sheets in 1mm-2mm thicknesses to layer cosmetics and jewelry safely.</div>
+              <div class="ind-sol-benefits">🔑 Key Benefits: Scratch-resistant, non-abrasive, highly elastic</div>
+              <a href="../../product-epe/" class="btn-sol-link">View Product Page</a>
+            </div>
+          </div>\n          <div class="ind-solution-card">
+            <div class="ind-sol-body">
+              <div class="ind-sol-title">Specialty Sealing Tapes</div>
+              <div class="ind-sol-desc">Strong self-adhesive tapes that keep outer cartons closed securely during rough sorting hub journeys.</div>
+              <div class="ind-sol-benefits">🔑 Key Benefits: High tear resistance, tamper evident, strong tack</div>
+              <a href="../../product-adhesive/" class="btn-sol-link">View Product Page</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="ind-benefits">
-      <div class="ind-benefits-inner">
-        <div class="ind-benefits-header">
-          <div class="ind-section-label">Why E-commerce Brands Choose Rajvi</div>
-          <h2 class="ind-section-title">Scale Your Packaging. Not Your Returns.</h2>
+
+    <!-- 5. WHY CHOOSE RAJVI -->
+    <section class="ind-why-sec">
+      <div class="ind-why-inner">
+        <div style="text-align:center;">
+          <div class="ind-section-label">Why Us</div>
+          <h2 class="ind-section-title">Value Propositions for E-commerce Clients</h2>
         </div>
-        <div class="ind-benefits-grid">
-          <div class="ind-benefit-card"><div class="ind-benefit-icon">📉</div><div class="ind-benefit-title">Slash Return Rates</div><div class="ind-benefit-desc">Proper bubble cushioning dramatically reduces transit damage. Our customers report 80%+ reduction in damage-related returns after switching.</div></div>
-          <div class="ind-benefit-card"><div class="ind-benefit-icon">⚖️</div><div class="ind-benefit-title">Lightweight = Lower Freight</div><div class="ind-benefit-desc">Air bubble wrap adds minimal weight — keeping your DIM weight calculations low and courier costs under control across thousands of shipments.</div></div>
-          <div class="ind-benefit-card"><div class="ind-benefit-icon">⚡</div><div class="ind-benefit-title">Faster Packing Time</div><div class="ind-benefit-desc">Pre-cut sheets and standard pouch sizes reduce packing time by up to 40% — critical for high-volume fulfilment during peak seasons.</div></div>
-          <div class="ind-benefit-card"><div class="ind-benefit-icon">🎁</div><div class="ind-benefit-title">Better Unboxing</div><div class="ind-benefit-desc">Neat, consistent bubble wrapping communicates quality to customers — improving NPS scores and reducing return-on-impulse from damaged expectations.</div></div>
-          <div class="ind-benefit-card"><div class="ind-benefit-icon">📦</div><div class="ind-benefit-title">Bulk Supply Guaranteed</div><div class="ind-benefit-desc">Consistent supply at scale — from small D2C operations to large marketplace fulfilment centres with thousands of daily orders.</div></div>
-          <div class="ind-benefit-card"><div class="ind-benefit-icon">✏️</div><div class="ind-benefit-title">Custom Branded Wraps</div><div class="ind-benefit-desc">Printed bubble pouches with your logo or design — turning functional packaging into a branded touchpoint at no compromise on protection.</div></div>
+        <div class="ind-why-grid">
+          <div class="ind-why-card">
+            <div style="font-size:32px;">📐</div>
+            <div class="ind-why-title">Custom Design</div>
+          </div>
+          <div class="ind-why-card">
+            <div style="font-size:32px;">🏭</div>
+            <div class="ind-why-title">High Volume</div>
+          </div>
+          <div class="ind-why-card">
+            <div style="font-size:32px;">✂</div>
+            <div class="ind-why-title">Precision Cutting</div>
+          </div>
+          <div class="ind-why-card">
+            <div style="font-size:32px;">✓</div>
+            <div class="ind-why-title">Consistent Quality</div>
+          </div>
+          <div class="ind-why-card">
+            <div style="font-size:32px;">🚚</div>
+            <div class="ind-why-title">Fast Delivery</div>
+          </div>
+          <div class="ind-why-card">
+            <div style="font-size:32px;">💵</div>
+            <div class="ind-why-title">Cost Effective</div>
+          </div>
+          <div class="ind-why-card">
+            <div style="font-size:32px;">🎓</div>
+            <div class="ind-why-title">Expertise</div>
+          </div>
+          <div class="ind-why-card">
+            <div style="font-size:32px;">🗺</div>
+            <div class="ind-why-title">Pan India Supply</div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="ind-form-section" id="get-quote">
-      <div class="ind-form-inner">
-        <div class="ind-form-left">
-          <div class="ind-section-label" style="color:#a78bfa;">Get Bulk Pricing</div>
-          <h2>Tell Us Your E-commerce Packaging Volume</h2>
-          <p>Whether you ship 500 or 50,000 orders a month, we'll structure the right packaging supply at the right price. Response within 24 hours.</p>
-          <div class="ind-trust-items">
-            <div class="ind-trust-item">Flexible MOQs for growing brands</div>
-            <div class="ind-trust-item">Consistent bulk supply guaranteed</div>
-            <div class="ind-trust-item">Custom-print pouch options</div>
-            <div class="ind-trust-item">Pan-India delivery available</div>
-            <div class="ind-trust-item">Response within 24 business hours</div>
+
+    <!-- 6. PACKAGING PROCESS -->
+    <section class="ind-process-sec">
+      <div class="ind-process-inner">
+        <div style="text-align:center;">
+          <div class="ind-section-label">Engagement Flow</div>
+          <h2 class="ind-section-title">Our Packaging Development Process</h2>
+        </div>
+        <div class="ind-process-flow">
+          <div class="ind-process-step">
+            <div class="ind-step-num">01</div>
+            <div class="ind-step-title">Requirement Discussion</div>
+          </div>
+          <div class="ind-process-step">
+            <div class="ind-step-num">02</div>
+            <div class="ind-step-title">Packaging Design</div>
+          </div>
+          <div class="ind-process-step">
+            <div class="ind-step-num">03</div>
+            <div class="ind-step-title">Prototype / Sample</div>
+          </div>
+          <div class="ind-process-step">
+            <div class="ind-step-num">04</div>
+            <div class="ind-step-title">Manufacturing</div>
+          </div>
+          <div class="ind-process-step">
+            <div class="ind-step-num">05</div>
+            <div class="ind-step-title">Delivery</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. APPLICATIONS -->
+    <section class="ind-apps-sec">
+      <div class="ind-apps-inner">
+        <div style="text-align:center;">
+          <div class="ind-section-label">Applications</div>
+          <h2 class="ind-section-title">Where Our Packaging is Used</h2>
+        </div>
+        <div class="ind-apps-grid">
+                    <div class="ind-app-card">
+            <div class="ind-app-icon">🧴</div>
+            <div class="ind-app-title">Cosmetics & Perfumes</div>
+          </div>\n          <div class="ind-app-card">
+            <div class="ind-app-icon">📱</div>
+            <div class="ind-app-title">Electronics & Gadgets</div>
+          </div>\n          <div class="ind-app-card">
+            <div class="ind-app-icon">💍</div>
+            <div class="ind-app-title">Jewelry & Accessories</div>
+          </div>\n          <div class="ind-app-card">
+            <div class="ind-app-icon">🥛</div>
+            <div class="ind-app-title">Glassware & Decor</div>
+          </div>\n          <div class="ind-app-card">
+            <div class="ind-app-icon">💊</div>
+            <div class="ind-app-title">Wellness & Medicines</div>
+          </div>\n          <div class="ind-app-card">
+            <div class="ind-app-icon">👞</div>
+            <div class="ind-app-title">Apparel & Shoes</div>
+          </div>\n          <div class="ind-app-card">
+            <div class="ind-app-icon">📚</div>
+            <div class="ind-app-title">Books & Stationeries</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. INDUSTRIES WE SUPPORT (SEGMENTS) -->
+    <section class="ind-segments-sec">
+      <div class="ind-segments-inner">
+        <div style="text-align:center;">
+          <div class="ind-section-label">Sub-segments</div>
+          <h2 class="ind-section-title">E-commerce Segments We Support</h2>
+        </div>
+        <div class="ind-segments-grid">
+                    <div class="ind-segment-item">D2C Brands</div>\n          <div class="ind-segment-item">Online Marketplaces</div>\n          <div class="ind-segment-item">Third-Party Logistics (3PL)</div>\n          <div class="ind-segment-item">Electronics Retailers</div>\n          <div class="ind-segment-item">Beauty & Cosmetics D2C</div>\n          <div class="ind-segment-item">Home Decor Sellers</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. SUCCESS METRICS -->
+    <section class="ind-metrics-sec">
+      <div class="ind-metrics-inner">
+                <div>
+          <div class="ind-metric-num">15+</div>
+          <div class="ind-metric-label">Years in Business</div>
+        </div>\n        <div>
+          <div class="ind-metric-num">80%</div>
+          <div class="ind-metric-label">Reduction in Damage</div>
+        </div>\n        <div>
+          <div class="ind-metric-num">40%</div>
+          <div class="ind-metric-label">Faster Packing Times</div>
+        </div>\n        <div>
+          <div class="ind-metric-num">Flexible</div>
+          <div class="ind-metric-label">MOQs for D2C</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FEATURED PRODUCTS -->
+    <section class="ind-featured-sec">
+      <div class="ind-featured-inner">
+        <div style="text-align:center;">
+          <div class="ind-section-label">Portfolio</div>
+          <h2 class="ind-section-title">Featured Packaging Categories</h2>
+        </div>
+        <div class="ind-featured-grid">
+          <div class="ind-featured-card">
+            <h4>EPE Foam</h4>
+            <a href="../../product-epe/" class="btn-featured-link">View Product Page</a>
+          </div>
+          <div class="ind-featured-card">
+            <h4>Bubble Wrap</h4>
+            <a href="../../product-bubble/" class="btn-featured-link">View Product Page</a>
+          </div>
+          <div class="ind-featured-card">
+            <h4>Foam Gaskets</h4>
+            <a href="../../product-gaskets/" class="btn-featured-link">View Product Page</a>
+          </div>
+          <div class="ind-featured-card">
+            <h4>PP Sheets &amp; Boxes</h4>
+            <a href="../../product-pp/" class="btn-featured-link">View Product Page</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. FAQs ACCORDION -->
+    <section class="ind-faq-sec">
+      <div class="ind-faq-inner">
+        <div style="text-align:center;">
+          <div class="ind-section-label">Common Inquiries</div>
+          <h2 class="ind-section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-grid">
+                    <div class="faq-item">
+            <button class="faq-trigger" onclick="toggleFaq(this)">
+              <span>Which packaging material is best for e-commerce?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              Pre-formed air bubble pouches are ideal for e-commerce because they provide great drop protection, add negligible weight, and cut order-packing time in half.
+            </div>
+          </div>\n          <div class="faq-item">
+            <button class="faq-trigger" onclick="toggleFaq(this)">
+              <span>Can you customize bubble pouch sizes for specific products?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              Yes, we produce bubble bags in custom sizes tailored to your products—from small jewelry pouches to large laptop sleeves.
+            </div>
+          </div>\n          <div class="faq-item">
+            <button class="faq-trigger" onclick="toggleFaq(this)">
+              <span>Do you support self-adhesive tape flaps on pouches?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              Yes, we can add peel-and-seal adhesive tapes to bubble pouches to eliminate the need for external packing tapes.
+            </div>
+          </div>\n          <div class="faq-item">
+            <button class="faq-trigger" onclick="toggleFaq(this)">
+              <span>What is the MOQ for custom bubble pouches?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              We offer flexible Minimum Order Quantities for growing D2C brands. Contact our sales team for details.
+            </div>
+          </div>\n          <div class="faq-item">
+            <button class="faq-trigger" onclick="toggleFaq(this)">
+              <span>Are your plastic packaging products recyclable?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              Yes, our bubble wraps and EPE foams are made of LDPE, which is 100% recyclable at recycling centers.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. RELATED RESOURCES -->
+    <section class="ind-faq-sec" style="background:var(--white);">
+      <div class="ind-faq-inner">
+        <div style="text-align:center;">
+          <div class="ind-section-label">Knowledge</div>
+          <h2 class="ind-section-title">Related Resources &amp; Guides</h2>
+        </div>
+        <div class="faq-grid">
+                    <div class="faq-item" style="border:none;">
+            <div class="ind-resource-title">E-commerce Returns Reduction Checklist</div>
+            <div class="ind-resource-desc">Practical packaging tweaks to lower transit breakages by 90% immediately.</div>
+            <a href="#" class="btn-resource" style="color:var(--gold);">Read Resource →</a>
+          </div>\n          <div class="faq-item" style="border:none;">
+            <div class="ind-resource-title">Dimensional Weight Optimization Guide</div>
+            <div class="ind-resource-desc">How to select packing sizes to lower courier shipping fees.</div>
+            <a href="#" class="btn-resource" style="color:var(--gold);">Read Resource →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. INQUIRY FORM -->
+    <section class="ind-inquiry-sec" id="inquiry">
+      <div class="ind-inquiry-inner">
+        <div class="ind-inquiry-left">
+          <div class="ind-section-label" style="color:var(--ind-accent);">Let's Discuss Your Packaging Requirements</div>
+          <h2>Let's Optimize Your E-commerce Fulfillment</h2>
+          <p>Send us your order volumes and typical product shapes. We'll configure pre-formed pouch prototypes to speed up your packing tables.</p>
+          <div style="margin-top: 30px; display:flex; flex-direction:column; gap: 14px;">
+            <div style="display:flex; align-items:center; gap: 12px;">
+              <span style="color:var(--ind-accent);">✓</span> <span>Free dimensional analysis check</span>
+            </div>
+            <div style="display:flex; align-items:center; gap: 12px;">
+              <span style="color:var(--ind-accent);">✓</span> <span>High-tack self adhesive backing</span>
+            </div>
+            <div style="display:flex; align-items:center; gap: 12px;">
+              <span style="color:var(--ind-accent);">✓</span> <span>Flexible low MOQs for brands</span>
+            </div>
+            <div style="display:flex; align-items:center; gap: 12px;">
+              <span style="color:var(--ind-accent);">✓</span> <span>Pan-India courier logistics support</span>
+            </div>
+            <div style="display:flex; align-items:center; gap: 12px;">
+              <span style="color:var(--ind-accent);">✓</span> <span>Response within 24 business hours</span>
+            </div>
           </div>
         </div>
         <div class="ind-form-card">
-          <h3>Request Bulk Quote</h3>
-          <p>Tell us your volumes and product types for a tailored quote.</p>
-          <form id="ecommerce-inquiry-form" onsubmit="handleIndFormSubmit(event)">
-            <div class="ind-form-row">
-              <div class="ind-form-group"><label for="ec-name">Full Name *</label><input type="text" id="ec-name" name="name" placeholder="Your name" required></div>
-              <div class="ind-form-group"><label for="ec-company">Company Name *</label><input type="text" id="ec-company" name="company" placeholder="Your company" required></div>
+          <h3>Request Custom Solutions</h3>
+          <form id="ecommerce-inquiry-form" onsubmit="handleIndFormSubmit(event, 'E-commerce')">
+            <div class="ind-form-group">
+              <label for="ecommerce-company">Company Name *</label>
+              <input type="text" id="ecommerce-company" name="company" placeholder="Your Company" required>
             </div>
-            <div class="ind-form-row">
-              <div class="ind-form-group"><label for="ec-phone">Phone Number *</label><input type="tel" id="ec-phone" name="phone" placeholder="+91 XXXXX XXXXX" required></div>
-              <div class="ind-form-group"><label for="ec-email">Email Address *</label><input type="email" id="ec-email" name="email" placeholder="your@email.com" required></div>
+            <div class="ind-form-group">
+              <label for="ecommerce-name">Contact Person *</label>
+              <input type="text" id="ecommerce-name" name="name" placeholder="Your Name" required>
             </div>
-            <div class="ind-form-group"><label for="ec-requirements">Packaging Requirements</label><textarea id="ec-requirements" name="requirements" placeholder="Describe your monthly order volumes, product types, current packaging, and any specific requirements..."></textarea></div>
-            <button type="submit" class="ind-submit-btn">Get My Bulk Quote →</button>
-            <div class="ind-form-privacy">🔒 Your information is kept strictly confidential</div>
+            <div class="ind-form-group">
+              <label for="ecommerce-email">Email Address *</label>
+              <input type="email" id="ecommerce-email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="ind-form-group">
+              <label for="ecommerce-phone">Mobile Number *</label>
+              <input type="tel" id="ecommerce-phone" name="phone" placeholder="91 XXXXX XXXXX" required>
+            </div>
+            <div class="ind-form-group">
+              <label for="ecommerce-category">Product Category *</label>
+              <select id="ecommerce-category" name="category" required>
+                <option value="Air Bubble">Air Bubble</option>
+                <option value="Air Bubble">Air Bubble Sheets/Wrap</option>
+                <option value="Foam & Buffers">EPE &amp; PU Foam</option>
+                <option value="Foam Gaskets">Foam Gaskets &amp; Tape</option>
+                <option value="PP Boxes & Sheets">PP Corrugated Boxes &amp; Sheets</option>
+                <option value="FLC Pallet Covers">FLC Pallet Covers</option>
+              </select>
+            </div>
+            <div class="ind-form-group">
+              <label for="ecommerce-requirement">Monthly Requirement *</label>
+              <select id="ecommerce-requirement" name="requirement" required>
+                <option value="">Select volume range</option>
+                <option value="Trial Run">Less than 500 units</option>
+                <option value="Standard">500 to 2,000 units</option>
+                <option value="High Volume">2,000 to 10,000 units</option>
+                <option value="Wholesale">10,000+ units</option>
+              </select>
+            </div>
+            <div class="ind-form-group">
+              <label for="ecommerce-message">Message / Specifications</label>
+              <textarea id="ecommerce-message" name="message" placeholder="Describe sizes, shapes, density guidelines, or custom specifications..."></textarea>
+            </div>
+            <button type="submit" class="ind-submit-btn">Get Custom Packaging Solutions →</button>
           </form>
         </div>
       </div>
     </section>
+
+    <!-- 14. FOOTER CTA -->
+    <section class="ind-footer-cta">
+      <div class="ind-footer-cta-inner">
+        <h3 class="ind-footer-cta-title">Looking for reliable packaging solutions for your business?</h3>
+        <div class="ind-footer-cta-btns">
+          <a href="#inquiry" class="btn btn-primary">Request Quote</a>
+          <a href="tel:+919274841995" class="btn btn-outline" style="color:var(--g1); border-color:var(--g1);">Call Our Team</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-v2-top">
-      <div class="footer-v2-brand"><img src="../../images/logow.png" alt="Rajvi Packaging" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="footer-logo-fallback" style="display:none"><div class="footer-brand-box"></div><div><div class="footer-brand-name">Rajvi Packaging</div><div class="footer-brand-sub">Design &middot; Protection &middot; Solutions</div></div></div><div class="footer-v2-divider"></div><p class="footer-v2-desc">Custom packaging solutions designed around your product requirements, industry needs and protection goals.</p></div>
-      <div class="footer-v2-col"><div class="footer-v2-col-line"></div><div class="footer-v2-col-title">Explore</div><nav class="footer-v2-links"><a href="../../about/">About Us</a><a href="../../products/">Products</a><a href="../../solutions/">Solutions</a><a href="../../blogs/">Blogs</a><a href="../../contact/">Contact Us</a></nav></div>
-      <div class="footer-v2-col"><div class="footer-v2-col-line"></div><div class="footer-v2-col-title">Products</div><nav class="footer-v2-links"><a href="../../product-foam/">Foam &amp; Buffers</a><a href="../../product-bubble/">Air Bubble</a><a href="../../product-pp/">PP Boxes &amp; Crates</a><a href="../../product-gaskets/">Foam Gaskets</a><a href="../../products/">View All Products</a></nav></div>
-      <div class="footer-v2-col"><div class="footer-v2-col-line"></div><div class="footer-v2-col-title">Solutions</div><nav class="footer-v2-links"><a href="../../solutions-design/">Design Solutions</a><a href="../../solutions-packaging/">Packaging Solutions</a><a href="../../solutions-manufacturing/">Manufacturing Solutions</a><a href="../../contact/">Contact Us</a></nav></div>
+      <div class="footer-v2-brand">
+        <img src="../../images/logow.png" alt="Rajvi Packaging" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="footer-logo-fallback" style="display:none">
+          <div class="footer-brand-box"></div>
+          <div><div class="footer-brand-name">Rajvi Packaging</div><div class="footer-brand-sub">Design &middot; Protection &middot; Solutions</div></div>
+        </div>
+        <div class="footer-v2-divider"></div>
+        <p class="footer-v2-desc">Custom packaging solutions designed around your product requirements, industry needs and protection goals.</p>
+      </div>
+      <div class="footer-v2-col">
+        <div class="footer-v2-col-line"></div>
+        <div class="footer-v2-col-title">Explore</div>
+        <nav class="footer-v2-links">
+          <a href="../../about/">About Us</a>
+          <a href="../../products/">Products</a>
+          <a href="../../solutions/">Solutions</a>
+          <a href="../../blogs/">Blogs</a>
+          <a href="../../contact/">Contact Us</a>
+        </nav>
+      </div>
+      <div class="footer-v2-col">
+        <div class="footer-v2-col-line"></div>
+        <div class="footer-v2-col-title">Products</div>
+        <nav class="footer-v2-links">
+          <a href="../../product-foam/">Foam &amp; Buffers</a>
+          <a href="../../product-bubble/">Air Bubble</a>
+          <a href="../../product-pp/">PP Boxes &amp; Crates</a>
+          <a href="../../product-gaskets/">Foam Gaskets</a>
+          <a href="../../products/">View All Products</a>
+        </nav>
+      </div>
+      <div class="footer-v2-col">
+        <div class="footer-v2-col-line"></div>
+        <div class="footer-v2-col-title">Solutions</div>
+        <nav class="footer-v2-links">
+          <a href="../../solutions-design/">Design Solutions</a>
+          <a href="../../solutions-packaging/">Packaging Solutions</a>
+          <a href="../../solutions-manufacturing/">Manufacturing Solutions</a>
+          <a href="../../contact/">Contact Us</a>
+        </nav>
+      </div>
     </div>
     <div class="footer-v2-contact-bar">
-      <div class="footer-v2-contact-cell"><svg class="fv2-contact-icon-plain" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://maps.app.goo.gl/Af2QqwHoCBzcbe7a7" target="_blank" rel="noopener" class="footer-v2-address-link">Plot No. 5 &amp; 6, City Survey No. NA/750/5 &amp; NA/750/6, Pipariya Faliya, Near Nitin Castings Ltd and Aarth Industries, Village Karvad, Vapi 396195</a></div>
-      <div class="footer-v2-contact-cell footer-v2-contact-cell--border"><svg class="fv2-contact-icon-plain" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+919274841995">+91 92748 41995</a></div>
-      <div class="footer-v2-contact-cell footer-v2-contact-cell--border"><svg class="fv2-contact-icon-plain" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@rajvipackaging.com">info@rajvipackaging.com</a></div>
+      <div class="footer-v2-contact-cell">
+        <svg class="fv2-contact-icon-plain" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" />
+        </svg>
+        <a href="https://maps.app.goo.gl/Af2QqwHoCBzcbe7a7" target="_blank" rel="noopener" class="footer-v2-address-link">Plot No. 5 &amp; 6, City Survey No. NA/750/5 &amp; NA/750/6, Pipariya Faliya, Near Nitin Castings Ltd and Aarth Industries, Village Karvad, Vapi 396195</a>
+      </div>
+      <div class="footer-v2-contact-cell footer-v2-contact-cell--border">
+        <svg class="fv2-contact-icon-plain" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+        </svg>
+        <a href="tel:+919274841995">+91 92748 41995</a>
+      </div>
+      <div class="footer-v2-contact-cell footer-v2-contact-cell--border">
+        <svg class="fv2-contact-icon-plain" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" />
+        </svg>
+        <a href="mailto:info@rajvipackaging.com">info@rajvipackaging.com</a>
+      </div>
     </div>
     <div class="footer-v2-bottom">
       <div class="footer-v2-copy">&copy; 2025 Rajvi Packaging. All rights reserved.</div>
-      <div class="footer-v2-doms">Made by <a href="https://www.domsglobal.co/" target="_blank" rel="noopener" class="footer-doms-link"><canvas id="footer-logo-canvas" class="footer-doms-canvas" width="220" height="124" aria-label="Doms Global"></canvas></a></div>
-      <div class="footer-v2-legal"><a href="../../privacy policy/">Privacy Policy</a><span class="fv2-legal-sep">|</span><a href="../../terms of use/">Terms of Use</a><span class="fv2-legal-sep">|</span><a href="../../sitemap/">Sitemap</a></div>
+      <div class="footer-v2-doms">
+        Made by
+        <a href="https://www.domsglobal.co/" target="_blank" rel="noopener" class="footer-doms-link">
+          <canvas id="footer-logo-canvas" class="footer-doms-canvas" width="220" height="124" aria-label="Doms Global"></canvas>
+        </a>
+      </div>
+      <div class="footer-v2-legal">
+        <a href="../../privacy policy/">Privacy Policy</a>
+        <span class="fv2-legal-sep">|</span>
+        <a href="../../terms of use/">Terms of Use</a>
+        <span class="fv2-legal-sep">|</span>
+        <a href="../../sitemap/">Sitemap</a>
+      </div>
     </div>
   </footer>
-  <script>function handleIndFormSubmit(e){e.preventDefault();const btn=e.target.querySelector('.ind-submit-btn');btn.textContent='✓ Submitted! We\'ll be in touch shortly.';btn.style.background='linear-gradient(135deg,#22543d,#276749)';btn.disabled=true;}</script>
+
+  <script>
+    function handleIndFormSubmit(e, industry) {
+      e.preventDefault();
+      const btn = e.target.querySelector('.ind-submit-btn');
+      btn.textContent = '✓ Submitted! We\'ll be in touch shortly.';
+      btn.style.background = 'linear-gradient(135deg, #22543d, #276749)';
+      btn.disabled = true;
+    }
+    
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      item.classList.toggle('active');
+      const isExpanded = item.classList.contains('active');
+      btn.querySelector('.faq-icon').textContent = isExpanded ? '✕' : '+';
+    }
+  </script>
   <script src="../../shared.js"></script>
 </body>
 </html>
