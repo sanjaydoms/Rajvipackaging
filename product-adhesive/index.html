@@ -14,6 +14,17 @@
     href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../shared.css">
+  <style>
+    .industry-cta-banner { background: linear-gradient(135deg, #003d82 0%, #0066cc 100%); padding: 60px; margin-top: 60px; }
+    .industry-cta-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+    .industry-cta-label { color: rgba(255,255,255,0.7); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+    .industry-cta-title { color: #fff; font-size: 32px; font-weight: 700; margin-bottom: 12px; }
+    .industry-cta-desc { color: rgba(255,255,255,0.85); font-size: 16px; max-width: 500px; }
+    @media (max-width: 768px) {
+      .industry-cta-banner { padding: 40px 20px; }
+      .industry-cta-inner { flex-direction: column; text-align: center; gap: 24px; }
+    }
+  </style>
 </head>
 
 <body>
@@ -170,6 +181,20 @@
       </div>
     </div>
   </div>
+    <section class="industry-cta-banner">
+    <div class="industry-cta-inner">
+      <div>
+        <p class="industry-cta-label">INDUSTRY SOLUTION</p>
+        <h2 class="industry-cta-title">Serving the Construction Industry</h2>
+        <p class="industry-cta-desc">See how our adhesive laminated foam sheets serve building insulation and soundproofing projects.</p>
+      </div>
+      <a href="../industry/construction/" class="btn btn-primary" style="background:#fff; color:#003d82;">
+        <span>Explore Solutions</span>
+        <span class="btn-arrow" style="color:#003d82;">→</span>
+      </a>
+    </div>
+  </section>
+
   <footer class="site-footer">
 
     <!-- TOP GRID: Logo col + 3 nav cols -->
