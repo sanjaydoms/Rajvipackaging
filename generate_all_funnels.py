@@ -1014,17 +1014,17 @@ html_template = """<!DOCTYPE html>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../shared.css">
   <style>
-    :root {{
+    :root {
       --ind-primary: {primary_color};
       --ind-accent: {accent_color};
       --ind-dark: {dark_color};
       --ind-light: {light_color};
-    }}
+    }
 
-    * {{ box-sizing: border-box; margin: 0; padding: 0; }}
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     /* ── HERO ── */
-    .ind-hero {{
+    .ind-hero {
       position: relative;
       min-height: 85vh;
       display: flex;
@@ -1032,15 +1032,15 @@ html_template = """<!DOCTYPE html>
       background: linear-gradient(135deg, var(--ind-dark) 0%, var(--ind-primary) 50%, var(--ind-dark) 100%);
       overflow: hidden;
       padding: 120px 60px 80px;
-    }}
-    .ind-hero::before {{
+    }
+    .ind-hero::before {
       content: '';
       position: absolute;
       inset: 0;
       background: radial-gradient(ellipse at 70% 50%, rgba({accent_rgb}, 0.15) 0%, transparent 60%);
       pointer-events: none;
-    }}
-    .ind-hero-grid {{
+    }
+    .ind-hero-grid {
       position: absolute;
       inset: 0;
       background-image:
@@ -1048,8 +1048,8 @@ html_template = """<!DOCTYPE html>
         linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
       background-size: 60px 60px;
       pointer-events: none;
-    }}
-    .ind-hero-inner {{
+    }
+    .ind-hero-inner {
       position: relative;
       max-width: var(--max-w);
       margin: 0 auto;
@@ -1058,8 +1058,8 @@ html_template = """<!DOCTYPE html>
       grid-template-columns: 1fr 1fr;
       gap: 80px;
       align-items: center;
-    }}
-    .ind-hero-badge {{
+    }
+    .ind-hero-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -1074,31 +1074,31 @@ html_template = """<!DOCTYPE html>
       padding: 6px 16px;
       border-radius: 100px;
       margin-bottom: 24px;
-    }}
-    .ind-hero-badge::before {{ content: '●'; font-size: 8px; }}
-    .ind-hero-title {{
+    }
+    .ind-hero-badge::before { content: '●'; font-size: 8px; }
+    .ind-hero-title {
       font-family: 'Sora', sans-serif;
       font-size: clamp(32px, 4.5vw, 54px);
       font-weight: 800;
       color: #fff;
       line-height: 1.15;
       margin-bottom: 20px;
-    }}
-    .ind-hero-title span {{ color: var(--ind-accent); }}
-    .ind-hero-subtitle {{
+    }
+    .ind-hero-title span { color: var(--ind-accent); }
+    .ind-hero-subtitle {
       font-family: 'Poppins', sans-serif;
       font-size: 16px;
       color: rgba(255,255,255,0.75);
       line-height: 1.7;
       margin-bottom: 40px;
       max-width: 520px;
-    }}
-    .ind-hero-cta-row {{
+    }
+    .ind-hero-cta-row {
       display: flex;
       gap: 16px;
       flex-wrap: wrap;
-    }}
-    .btn-ind-primary {{
+    }
+    .btn-ind-primary {
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -1111,9 +1111,9 @@ html_template = """<!DOCTYPE html>
       border-radius: 6px;
       text-decoration: none;
       transition: transform 0.2s, box-shadow 0.2s;
-    }}
-    .btn-ind-primary:hover {{ transform: translateY(-2px); box-shadow: 0 8px 32px rgba({accent_rgb}, 0.4); }}
-    .btn-ind-secondary {{
+    }
+    .btn-ind-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba({accent_rgb}, 0.4); }
+    .btn-ind-secondary {
       display: inline-flex;
       align-items: center;
       gap: 10px;
@@ -1127,11 +1127,11 @@ html_template = """<!DOCTYPE html>
       border-radius: 6px;
       text-decoration: none;
       transition: background 0.2s, border-color 0.2s;
-    }}
-    .btn-ind-secondary:hover {{ background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.4); }}
+    }
+    .btn-ind-secondary:hover { background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.4); }
 
     /* Hero stats */
-    .ind-hero-stats {{
+    .ind-hero-stats {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1px;
@@ -1139,35 +1139,35 @@ html_template = """<!DOCTYPE html>
       border-radius: 12px;
       overflow: hidden;
       margin-top: 48px;
-    }}
-    .ind-stat {{
+    }
+    .ind-stat {
       background: rgba(255,255,255,0.04);
       padding: 20px 16px;
       text-align: center;
-    }}
-    .ind-stat-num {{
+    }
+    .ind-stat-num {
       font-family: 'Sora', sans-serif;
       font-size: 28px;
       font-weight: 800;
       color: var(--ind-accent);
-    }}
-    .ind-stat-label {{
+    }
+    .ind-stat-label {
       font-family: 'Poppins', sans-serif;
       font-size: 11px;
       color: rgba(255,255,255,0.6);
       margin-top: 4px;
       letter-spacing: 0.05em;
-    }}
+    }
 
     /* Hero right — problem card */
-    .ind-problem-card {{
+    .ind-problem-card {
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.1);
       border-radius: 16px;
       padding: 36px;
       backdrop-filter: blur(12px);
-    }}
-    .ind-problem-label {{
+    }
+    .ind-problem-label {
       font-family: 'Poppins', sans-serif;
       font-size: 11px;
       font-weight: 700;
@@ -1175,19 +1175,19 @@ html_template = """<!DOCTYPE html>
       text-transform: uppercase;
       color: #f87171;
       margin-bottom: 16px;
-    }}
-    .ind-problem-title {{
+    }
+    .ind-problem-title {
       font-family: 'Sora', sans-serif;
       font-size: 20px;
       font-weight: 700;
       color: #fff;
       margin-bottom: 20px;
       line-height: 1.35;
-    }}
-    .ind-problem-list {{
+    }
+    .ind-problem-list {
       list-style: none;
-    }}
-    .ind-problem-list li {{
+    }
+    .ind-problem-list li {
       display: flex;
       align-items: flex-start;
       gap: 12px;
@@ -1197,9 +1197,9 @@ html_template = """<!DOCTYPE html>
       padding: 10px 0;
       border-bottom: 1px solid rgba(255,255,255,0.07);
       line-height: 1.5;
-    }}
-    .ind-problem-list li:last-child {{ border-bottom: none; }}
-    .ind-problem-list li::before {{
+    }
+    .ind-problem-list li:last-child { border-bottom: none; }
+    .ind-problem-list li::before {
       content: '!';
       flex-shrink: 0;
       width: 18px;
@@ -1214,20 +1214,20 @@ html_template = """<!DOCTYPE html>
       align-items: center;
       justify-content: center;
       margin-top: 2px;
-    }}
+    }
 
     /* ── OVERVIEW & SECTION HEADERS ── */
-    .ind-overview {{
+    .ind-overview {
       padding: 100px 60px;
       background: var(--white);
       border-bottom: 1px solid var(--border);
-    }}
-    .ind-overview-inner {{
+    }
+    .ind-overview-inner {
       max-width: 900px;
       margin: 0 auto;
       text-align: center;
-    }}
-    .ind-section-label {{
+    }
+    .ind-section-label {
       font-family: 'Poppins', sans-serif;
       font-size: 11px;
       font-weight: 700;
@@ -1235,115 +1235,115 @@ html_template = """<!DOCTYPE html>
       text-transform: uppercase;
       color: var(--ind-accent);
       margin-bottom: 14px;
-    }}
-    .ind-section-title {{
+    }
+    .ind-section-title {
       font-family: 'Sora', sans-serif;
       font-size: clamp(26px, 3vw, 38px);
       font-weight: 800;
       color: var(--g1);
       line-height: 1.25;
       margin-bottom: 20px;
-    }}
-    .ind-overview-text {{
+    }
+    .ind-overview-text {
       font-family: 'Poppins', sans-serif;
       font-size: 16px;
       color: var(--muted);
       line-height: 1.8;
-    }}
+    }
 
     /* ── CHALLENGES SECTION ── */
-    .ind-challenges-sec {{
+    .ind-challenges-sec {
       padding: 100px 60px;
       background: var(--bg);
-    }}
-    .ind-challenges-inner {{
+    }
+    .ind-challenges-inner {
       max-width: var(--max-w);
       margin: 0 auto;
-    }}
-    .ind-challenges-grid {{
+    }
+    .ind-challenges-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
       margin-top: 48px;
-    }}
-    .ind-challenge-card {{
+    }
+    .ind-challenge-card {
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 30px;
       transition: transform 0.25s, box-shadow 0.25s;
-    }}
-    .ind-challenge-card:hover {{
+    }
+    .ind-challenge-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 12px 30px rgba(0,0,0,0.05);
-    }}
-    .ind-challenge-icon {{
+    }
+    .ind-challenge-icon {
       font-size: 32px;
       margin-bottom: 18px;
-    }}
-    .ind-challenge-card-title {{
+    }
+    .ind-challenge-card-title {
       font-family: 'Sora', sans-serif;
       font-size: 17px;
       font-weight: 700;
       color: var(--g1);
       margin-bottom: 12px;
-    }}
-    .ind-challenge-card-desc {{
+    }
+    .ind-challenge-card-desc {
       font-family: 'Poppins', sans-serif;
       font-size: 13.5px;
       color: var(--muted);
       line-height: 1.6;
-    }}
+    }
 
     /* ── SOLUTIONS SECTION ── */
-    .ind-solutions-sec {{
+    .ind-solutions-sec {
       padding: 100px 60px;
       background: var(--white);
-    }}
-    .ind-solutions-inner {{
+    }
+    .ind-solutions-inner {
       max-width: var(--max-w);
       margin: 0 auto;
-    }}
-    .ind-mapping-box {{
+    }
+    .ind-mapping-box {
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 40px;
       margin: 40px 0 60px;
-    }}
-    .ind-mapping-title {{
+    }
+    .ind-mapping-title {
       font-family: 'Sora', sans-serif;
       font-size: 18px;
       font-weight: 700;
       color: var(--g1);
       margin-bottom: 24px;
       text-align: center;
-    }}
-    .ind-mapping-table {{
+    }
+    .ind-mapping-table {
       width: 100%;
       border-collapse: collapse;
       font-family: 'Poppins', sans-serif;
       font-size: 14.5px;
-    }}
-    .ind-mapping-table th, .ind-mapping-table td {{
+    }
+    .ind-mapping-table th, .ind-mapping-table td {
       padding: 16px 20px;
       text-align: left;
       border-bottom: 1px solid var(--border);
-    }}
-    .ind-mapping-table th {{
+    }
+    .ind-mapping-table th {
       font-weight: 700;
       color: var(--g1);
       background: rgba(10, 61, 44, 0.03);
-    }}
-    .ind-mapping-table td {{
+    }
+    .ind-mapping-table td {
       color: var(--muted);
-    }}
-    .ind-solutions-grid {{
+    }
+    .ind-solutions-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
-    }}
-    .ind-solution-card {{
+    }
+    .ind-solution-card {
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 12px;
@@ -1351,29 +1351,29 @@ html_template = """<!DOCTYPE html>
       display: flex;
       flex-direction: column;
       height: 100%;
-    }}
-    .ind-sol-body {{
+    }
+    .ind-sol-body {
       padding: 30px;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-    }}
-    .ind-sol-title {{
+    }
+    .ind-sol-title {
       font-family: 'Sora', sans-serif;
       font-size: 18px;
       font-weight: 700;
       color: var(--g1);
       margin-bottom: 12px;
-    }}
-    .ind-sol-desc {{
+    }
+    .ind-sol-desc {
       font-family: 'Poppins', sans-serif;
       font-size: 13.5px;
       color: var(--muted);
       line-height: 1.6;
       margin-bottom: 20px;
       flex-grow: 1;
-    }}
-    .ind-sol-benefits {{
+    }
+    .ind-sol-benefits {
       background: var(--white);
       border: 1px solid var(--border);
       padding: 12px 16px;
@@ -1383,8 +1383,8 @@ html_template = """<!DOCTYPE html>
       color: var(--g1);
       font-weight: 600;
       margin-bottom: 24px;
-    }}
-    .btn-sol-link {{
+    }
+    .btn-sol-link {
       display: block;
       width: 100%;
       text-align: center;
@@ -1397,66 +1397,66 @@ html_template = """<!DOCTYPE html>
       border-radius: 6px;
       text-decoration: none;
       transition: background 0.2s;
-    }}
-    .btn-sol-link:hover {{
+    }
+    .btn-sol-link:hover {
       background: var(--g2);
-    }}
+    }
 
     /* ── WHY CHOOSE RAJVI ── */
-    .ind-why-sec {{
+    .ind-why-sec {
       padding: 100px 60px;
       background: var(--bg2);
-    }}
-    .ind-why-inner {{
+    }
+    .ind-why-inner {
       max-width: var(--max-w);
       margin: 0 auto;
-    }}
-    .ind-why-grid {{
+    }
+    .ind-why-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       margin-top: 48px;
-    }}
-    .ind-why-card {{
+    }
+    .ind-why-card {
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 24px;
       text-align: center;
-    }}
-    .ind-why-title {{
+    }
+    .ind-why-title {
       font-family: 'Sora', sans-serif;
       font-size: 15px;
       font-weight: 700;
       color: var(--g1);
       margin-top: 12px;
-    }}
+    }
 
     /* ── PACKAGING PROCESS ── */
-    .ind-process-sec {{
+    .ind-process-sec {
       padding: 100px 60px;
       background: var(--white);
-    }}
-    .ind-process-inner {{
+    }
+    .ind-process-inner {
       max-width: var(--max-w);
       margin: 0 auto;
-    }}
-    .ind-process-flow {{
+    }
+    .ind-process-flow {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 20px;
       margin-top: 60px;
       position: relative;
-    }}
-    .ind-process-step {{
+    }
+    .ind-process-step {
       text-align: center;
       position: relative;
       background: var(--bg);
       padding: 30px 20px;
       border-radius: 10px;
       border: 1px solid var(--border);
-    }}
-    .ind-step-num {{
+    }
+    .ind-step-num {
       width: 36px;
       height: 36px;
       background: var(--g1);
@@ -1469,8 +1469,8 @@ html_template = """<!DOCTYPE html>
       font-size: 14px;
       font-weight: 700;
       margin-bottom: 16px;
-    }}
-    .ind-process-step::after {{
+    }
+    .ind-process-step::after {
       content: '→';
       position: absolute;
       right: -15px;
@@ -1479,63 +1479,63 @@ html_template = """<!DOCTYPE html>
       font-size: 24px;
       color: var(--gold);
       z-index: 2;
-    }}
-    .ind-process-step:last-child::after {{
+    }
+    .ind-process-step:last-child::after {
       display: none;
-    }}
-    .ind-step-title {{
+    }
+    .ind-step-title {
       font-family: 'Sora', sans-serif;
       font-size: 14px;
       font-weight: 700;
       color: var(--g1);
-    }}
+    }
 
     /* ── APPLICATIONS ── */
-    .ind-apps-sec {{
+    .ind-apps-sec {
       padding: 100px 60px;
       background: var(--bg);
-    }}
-    .ind-apps-inner {{
+    }
+    .ind-apps-inner {
       max-width: var(--max-w);
       margin: 0 auto;
-    }}
-    .ind-apps-grid {{
+    }
+    .ind-apps-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       margin-top: 48px;
-    }}
-    .ind-app-card {{
+    }
+    .ind-app-card {
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 24px;
       text-align: center;
-    }}
-    .ind-app-icon {{ font-size: 32px; margin-bottom: 12px; }}
-    .ind-app-title {{
+    }
+    .ind-app-icon { font-size: 32px; margin-bottom: 12px; }
+    .ind-app-title {
       font-family: 'Sora', sans-serif;
       font-size: 14.5px;
       font-weight: 700;
       color: var(--g1);
-    }}
+    }
 
     /* ── INDUSTRY SEGMENTS ── */
-    .ind-segments-sec {{
+    .ind-segments-sec {
       padding: 100px 60px;
       background: var(--white);
-    }}
-    .ind-segments-inner {{
+    }
+    .ind-segments-inner {
       max-width: var(--max-w);
       margin: 0 auto;
-    }}
-    .ind-segments-grid {{
+    }
+    .ind-segments-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       margin-top: 48px;
-    }}
-    .ind-segment-item {{
+    }
+    .ind-segment-item {
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 8px;
@@ -1545,51 +1545,51 @@ html_template = """<!DOCTYPE html>
       font-size: 14px;
       font-weight: 600;
       color: var(--g1);
-    }}
+    }
 
     /* ── SUCCESS METRICS ── */
-    .ind-metrics-sec {{
+    .ind-metrics-sec {
       padding: 80px 60px;
       background: var(--g1);
       color: #fff;
-    }}
-    .ind-metrics-inner {{
+    }
+    .ind-metrics-inner {
       max-width: var(--max-w);
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 40px;
       text-align: center;
-    }}
-    .ind-metric-num {{
+    }
+    .ind-metric-num {
       font-family: 'Sora', sans-serif;
       font-size: 40px;
       font-weight: 800;
       color: var(--gold);
       margin-bottom: 8px;
-    }}
-    .ind-metric-label {{
+    }
+    .ind-metric-label {
       font-family: 'Poppins', sans-serif;
       font-size: 13px;
       color: rgba(255,255,255,0.7);
-    }}
+    }
 
     /* ── FEATURED PRODUCTS ── */
-    .ind-featured-sec {{
+    .ind-featured-sec {
       padding: 100px 60px;
       background: var(--white);
-    }}
-    .ind-featured-inner {{
+    }
+    .ind-featured-inner {
       max-width: var(--max-w);
       margin: 0 auto;
-    }}
-    .ind-featured-grid {{
+    }
+    .ind-featured-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       margin-top: 48px;
-    }}
-    .ind-featured-card {{
+    }
+    .ind-featured-card {
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 10px;
@@ -1598,15 +1598,15 @@ html_template = """<!DOCTYPE html>
       display: flex;
       flex-direction: column;
       height: 100%;
-    }}
-    .ind-featured-card h4 {{
+    }
+    .ind-featured-card h4 {
       font-family: 'Sora', sans-serif;
       font-size: 15px;
       font-weight: 700;
       color: var(--g1);
       margin-bottom: 16px;
-    }}
-    .btn-featured-link {{
+    }
+    .btn-featured-link {
       margin-top: auto;
       display: block;
       padding: 10px;
@@ -1618,34 +1618,34 @@ html_template = """<!DOCTYPE html>
       font-weight: 600;
       border-radius: 6px;
       transition: background 0.2s, color 0.2s;
-    }}
-    .btn-featured-link:hover {{
+    }
+    .btn-featured-link:hover {
       background: var(--g1);
       color: #fff;
-    }}
+    }
 
     /* ── FAQs ── */
-    .ind-faq-sec {{
+    .ind-faq-sec {
       padding: 100px 60px;
       background: var(--bg);
-    }}
-    .ind-faq-inner {{
+    }
+    .ind-faq-inner {
       max-width: 800px;
       margin: 0 auto;
-    }}
-    .faq-grid {{
+    }
+    .faq-grid {
       display: flex;
       flex-direction: column;
       gap: 16px;
       margin-top: 48px;
-    }}
-    .faq-item {{
+    }
+    .faq-item {
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: 8px;
       overflow: hidden;
-    }}
-    .faq-trigger {{
+    }
+    .faq-trigger {
       width: 100%;
       background: none;
       border: none;
@@ -1659,119 +1659,119 @@ html_template = """<!DOCTYPE html>
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }}
-    .faq-content {{
+    }
+    .faq-content {
       padding: 0 24px 20px;
       font-family: 'Poppins', sans-serif;
       font-size: 14px;
       color: var(--muted);
       line-height: 1.6;
       display: none;
-    }}
-    .faq-item.active .faq-content {{ display: block; }}
-    .faq-item.active .faq-icon {{ transform: rotate(45deg); }}
-    .faq-icon {{ transition: transform 0.2s; font-size: 18px; color: var(--gold); }}
+    }
+    .faq-item.active .faq-content { display: block; }
+    .faq-item.active .faq-icon { transform: rotate(45deg); }
+    .faq-icon { transition: transform 0.2s; font-size: 18px; color: var(--gold); }
 
     /* ── RESOURCES ── */
-    .ind-resources-sec {{
+    .ind-resources-sec {
       padding: 100px 60px;
       background: var(--white);
-    }}
-    .ind-resources-inner {{
+    }
+    .ind-resources-inner {
       max-width: var(--max-w);
       margin: 0 auto;
-    }}
-    .ind-resources-grid {{
+    }
+    .ind-resources-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
       margin-top: 48px;
-    }}
-    .ind-resource-card {{
+    }
+    .ind-resource-card {
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 30px;
-    }}
-    .ind-resource-title {{
+    }
+    .ind-resource-title {
       font-family: 'Sora', sans-serif;
       font-size: 17px;
       font-weight: 700;
       color: var(--g1);
       margin-bottom: 12px;
-    }}
-    .ind-resource-desc {{
+    }
+    .ind-resource-desc {
       font-family: 'Poppins', sans-serif;
       font-size: 13.5px;
       color: var(--muted);
       line-height: 1.6;
       margin-bottom: 20px;
-    }}
-    .btn-resource {{
+    }
+    .btn-resource {
       display: inline-block;
       font-family: 'Poppins', sans-serif;
       font-size: 13px;
       font-weight: 600;
       color: var(--gold);
       text-decoration: none;
-    }}
+    }
 
     /* ── INQUIRY SECTION ── */
-    .ind-inquiry-sec {{
+    .ind-inquiry-sec {
       padding: 100px 60px;
       background: linear-gradient(135deg, var(--ind-dark) 0%, var(--ind-primary) 100%);
       color: #fff;
-    }}
-    .ind-inquiry-inner {{
+    }
+    .ind-inquiry-inner {
       max-width: 1000px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1.2fr;
       gap: 80px;
       align-items: start;
-    }}
-    .ind-inquiry-left h2 {{
+    }
+    .ind-inquiry-left h2 {
       font-family: 'Sora', sans-serif;
       font-size: 32px;
       font-weight: 800;
       margin-bottom: 20px;
-    }}
-    .ind-inquiry-left p {{
+    }
+    .ind-inquiry-left p {
       font-family: 'Poppins', sans-serif;
       font-size: 15px;
       color: rgba(255,255,255,0.7);
       line-height: 1.7;
-    }}
-    .ind-form-card {{
+    }
+    .ind-form-card {
       background: var(--white);
       border-radius: 16px;
       padding: 40px;
       box-shadow: 0 30px 60px rgba(0,0,0,0.2);
-    }}
-    .ind-form-card h3 {{
+    }
+    .ind-form-card h3 {
       font-family: 'Sora', sans-serif;
       font-size: 20px;
       font-weight: 700;
       color: var(--g1);
       margin-bottom: 24px;
-    }}
-    .ind-form-group {{
+    }
+    .ind-form-group {
       display: flex;
       flex-direction: column;
       gap: 6px;
       margin-bottom: 16px;
-    }}
-    .ind-form-group label {{
+    }
+    .ind-form-group label {
       font-family: 'Poppins', sans-serif;
       font-size: 11px;
       font-weight: 700;
       color: var(--muted);
       letter-spacing: 0.05em;
       text-transform: uppercase;
-    }}
+    }
     .ind-form-group input,
     .ind-form-group select,
-    .ind-form-group textarea {{
+    .ind-form-group textarea {
       font-family: 'Poppins', sans-serif;
       font-size: 14px;
       color: var(--text);
@@ -1780,18 +1780,18 @@ html_template = """<!DOCTYPE html>
       padding: 12px 16px;
       background: #f8fafc;
       outline: none;
-    }}
+    }
     .ind-form-group input:focus,
     .ind-form-group select:focus,
-    .ind-form-group textarea:focus {{
+    .ind-form-group textarea:focus {
       border-color: var(--ind-primary);
       background: #fff;
-    }}
-    .ind-form-group textarea {{
+    }
+    .ind-form-group textarea {
       resize: vertical;
       min-height: 100px;
-    }}
-    .ind-submit-btn {{
+    }
+    .ind-submit-btn {
       width: 100%;
       padding: 15px;
       background: var(--g1);
@@ -1803,41 +1803,41 @@ html_template = """<!DOCTYPE html>
       border-radius: 8px;
       cursor: pointer;
       transition: background 0.2s;
-    }}
-    .ind-submit-btn:hover {{
+    }
+    .ind-submit-btn:hover {
       background: var(--g2);
-    }}
+    }
 
     /* ── FOOTER CTA ── */
-    .ind-footer-cta {{
+    .ind-footer-cta {
       background: var(--bg2);
       padding: 60px;
       text-align: center;
-    }}
-    .ind-footer-cta-inner {{
+    }
+    .ind-footer-cta-inner {
       max-width: 600px;
       margin: 0 auto;
-    }}
-    .ind-footer-cta-title {{
+    }
+    .ind-footer-cta-title {
       font-family: 'Sora', sans-serif;
       font-size: 22px;
       font-weight: 700;
       color: var(--g1);
       margin-bottom: 24px;
-    }}
-    .ind-footer-cta-btns {{
+    }
+    .ind-footer-cta-btns {
       display: flex;
       justify-content: center;
       gap: 16px;
-    }}
+    }
 
     @media (max-width: 900px) {
-      .ind-hero-inner, .ind-inquiry-inner {{ grid-template-columns: 1fr; gap: 40px; }}
-      .ind-hero {{ padding: 100px 24px 60px; }}
-      .ind-overview, .ind-challenges-sec, .ind-solutions-sec, .ind-why-sec, .ind-process-sec, .ind-apps-sec, .ind-segments-sec, .ind-metrics-sec, .ind-featured-sec, .ind-faq-sec, .ind-resources-sec, .ind-inquiry-sec {{ padding: 60px 24px; }}
-      .ind-challenges-grid, .ind-solutions-grid, .ind-why-grid, .ind-process-flow, .ind-apps-grid, .ind-segments-grid, .ind-featured-grid, .ind-resources-grid {{ grid-template-columns: 1fr; }}
-      .ind-metrics-inner {{ grid-template-columns: 1fr 1fr; gap: 24px; }}
-      .ind-process-step::after {{ content: '↓'; right: auto; left: 50%; top: auto; bottom: -20px; transform: translateX(-50%); }}
+      .ind-hero-inner, .ind-inquiry-inner { grid-template-columns: 1fr; gap: 40px; }
+      .ind-hero { padding: 100px 24px 60px; }
+      .ind-overview, .ind-challenges-sec, .ind-solutions-sec, .ind-why-sec, .ind-process-sec, .ind-apps-sec, .ind-segments-sec, .ind-metrics-sec, .ind-featured-sec, .ind-faq-sec, .ind-resources-sec, .ind-inquiry-sec { padding: 60px 24px; }
+      .ind-challenges-grid, .ind-solutions-grid, .ind-why-grid, .ind-process-flow, .ind-apps-grid, .ind-segments-grid, .ind-featured-grid, .ind-resources-grid { grid-template-columns: 1fr; }
+      .ind-metrics-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
+      .ind-process-step::after { content: '↓'; right: auto; left: 50%; top: auto; bottom: -20px; transform: translateX(-50%); }
     }
   </style>
 </head>
