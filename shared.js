@@ -520,9 +520,25 @@ document.addEventListener('DOMContentLoaded', function () {
   var FRAME_COUNT = 126;        // ANIMATION 4000 → ANIMATION 4125
   var FPS = 24;
   var BASE = 4000;              // starting frame number
-  // Detect if we're in pages/ subfolder and adjust path accordingly
-  var isInner = window.location.pathname !== '/' && window.location.pathname !== '/index.html' && !window.location.pathname.endsWith('/');
-  var FRAME_DIR = isInner ? '../images/PNG Sequence Final/' : 'images/PNG Sequence Final/';
+  // Detect folder depth dynamically and adjust path to root accordingly
+  var depth = 0;
+  var path = window.location.pathname;
+  if (path.startsWith('/')) path = path.substring(1);
+  if (path.endsWith('/')) path = path.substring(0, path.length - 1);
+  if (path) {
+    var segments = path.split('/');
+    var last = segments[segments.length - 1];
+    if (last.indexOf('.') !== -1 || last === 'index.html') {
+      depth = segments.length - 1;
+    } else {
+      depth = segments.length;
+    }
+  }
+  var prefix = '';
+  for (var d = 0; d < depth; d++) {
+    prefix += '../';
+  }
+  var FRAME_DIR = prefix + 'images/PNG Sequence Final/';
 
   document.addEventListener('DOMContentLoaded', function () {
     var canvas = document.getElementById('footer-logo-canvas');
