@@ -520,9 +520,17 @@ document.addEventListener('DOMContentLoaded', function () {
   var FRAME_COUNT = 126;        // ANIMATION 4000 → ANIMATION 4125
   var FPS = 24;
   var BASE = 4000;              // starting frame number
-  // Detect if we're in pages/ subfolder and adjust path accordingly
-  var isInner = window.location.pathname !== '/' && window.location.pathname !== '/index.html' && !window.location.pathname.endsWith('/');
-  var FRAME_DIR = isInner ? '../images/PNG Sequence Final/' : 'images/PNG Sequence Final/';
+  // Resolve prefix relative to the location of shared.js
+  var prefix = '';
+  var scriptTag = document.querySelector('script[src*="shared.js"]');
+  if (scriptTag) {
+    var src = scriptTag.getAttribute('src');
+    var idx = src.indexOf('shared.js');
+    if (idx !== -1) {
+      prefix = src.substring(0, idx);
+    }
+  }
+  var FRAME_DIR = prefix + 'images/PNG Sequence Final/';
 
   document.addEventListener('DOMContentLoaded', function () {
     var canvas = document.getElementById('footer-logo-canvas');

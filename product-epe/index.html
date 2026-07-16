@@ -14,6 +14,19 @@
     href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../shared.css">
+  <style>
+        .industry-cta-banner { background: linear-gradient(135deg, #0A3D2C 0%, #061d15 100%); padding: 60px; margin-top: 60px; }
+    .industry-cta-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+    .industry-cta-label { color: rgba(255,255,255,0.7); font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+    .industry-cta-title { color: #fff; font-size: 32px; font-weight: 700; margin-bottom: 12px; }
+    .industry-cta-desc { color: rgba(255,255,255,0.85); font-size: 16px; max-width: 500px; }
+    .industry-cta-btn { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #0A3D2C; border: none; padding: 14px 28px; border-radius: 6px; font-weight: 700; text-decoration: none; text-transform: uppercase; font-size: 13px; letter-spacing: 0.05em; transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s; cursor: pointer; }
+    .industry-cta-btn:hover { background: #C9960A; color: #fff; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    @media (max-width: 768px) {
+      .industry-cta-banner { padding: 40px 20px; }
+      .industry-cta-inner { flex-direction: column; text-align: center; gap: 24px; }
+    }
+  </style>
 </head>
 
 <body>
@@ -181,6 +194,20 @@
       </div>
     </div>
   </div>
+    <section class="industry-cta-banner">
+    <div class="industry-cta-inner">
+      <div>
+        <p class="industry-cta-label">INDUSTRY SOLUTION</p>
+        <h2 class="industry-cta-title">Serving the Pharmaceutical Industry</h2>
+        <p class="industry-cta-desc">See how our cleanroom-grade EPE liners satisfy stringent pharmaceutical packaging standards.</p>
+      </div>
+      <a href="../industry/pharmaceutical/" class="industry-cta-btn">
+        <span>Explore Solutions</span>
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
   <footer class="site-footer">
 
     <!-- TOP GRID: Logo col + 3 nav cols -->
