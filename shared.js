@@ -625,7 +625,7 @@ document.addEventListener('DOMContentLoaded', function () {
       Your enquiry has been received successfully.
     </p>
     <p style="font-size: 14px; line-height: 1.6; color: var(--muted, #3A3A3A); margin-bottom: 32px; font-family: 'Poppins', sans-serif;">
-      A packaging consultant from our team will contact you shortly to understand your needs and help you find the right packaging solution for your business.
+      Our team will contact you shortly to understand your needs and help you find the right packaging solution for your business.
     </p>
     <div class="modal-buttons" style="display: flex; gap: 16px; justify-content: center; align-items: center;">
       <a href="${productsPath}" style="display: inline-flex; align-items: center; justify-content: center; flex: 1; font-size: 14px; font-weight: 600; padding: 14px 20px; border-radius: 8px; cursor: pointer; text-decoration: none; background: var(--g1, #0A3D2C); color: var(--white, #FFFFFF); transition: background 0.2s, transform 0.1s; font-family: 'Poppins', sans-serif; box-shadow: 0 4px 12px rgba(10, 61, 44, 0.15); border: none; box-sizing: border-box;">
