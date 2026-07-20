@@ -583,3 +583,77 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 })();
+
+/* ===== CONTACT FORM SUCCESS POPUP ===== */
+(function() {
+  function showSuccessModal() {
+    let modal = document.getElementById('enquiry-success-modal');
+    if (!modal) {
+      const modalHtml = `
+<div id="enquiry-success-modal" style="position: fixed; inset: 0; background: rgba(10, 61, 44, 0.6); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; z-index: 10000; opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; font-family: 'Poppins', sans-serif;">
+  <div class="modal-card" style="background: var(--white, #FFFFFF); border: 1px solid var(--border, rgba(0,0,0,0.08)); border-radius: 16px; padding: 40px; max-width: 480px; width: 90%; text-align: center; box-shadow: 0 24px 48px rgba(10, 61, 44, 0.18); transform: translateY(20px) scale(0.95); transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease-in-out;">
+    <div style="width: 72px; height: 72px; background: rgba(34, 197, 94, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; border: 2px solid #22c55e;">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <h3 style="font-size: 24px; font-weight: 700; color: var(--g1, #0A3D2C); margin-bottom: 12px; font-family: 'Sora', sans-serif;">Enquiry Submitted!</h3>
+    <p style="font-size: 15px; line-height: 1.6; color: var(--muted, #3A3A3A); margin-bottom: 32px; font-family: 'Poppins', sans-serif;">
+      Thank you for reaching out. A packaging expert from our team will reach you shortly to discuss your requirements.
+    </p>
+    <button id="enquiry-success-close" style="display: inline-flex; align-items: center; justify-content: center; width: 100%; font-size: 15px; font-weight: 600; padding: 14px; border-radius: 8px; cursor: pointer; border: none; background: var(--g1, #0A3D2C); color: var(--white, #FFFFFF); transition: background 0.2s, transform 0.1s; font-family: 'Poppins', sans-serif; box-shadow: 0 4px 12px rgba(10, 61, 44, 0.15);">
+      Close
+    </button>
+  </div>
+</div>`;
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = modalHtml.trim();
+      modal = tempDiv.firstChild;
+      document.body.appendChild(modal);
+
+      // Event listener to close
+      modal.querySelector('#enquiry-success-close').addEventListener('click', hideSuccessModal);
+      modal.querySelector('#enquiry-success-close').addEventListener('mouseenter', function() {
+        this.style.background = 'var(--g2, #0F5240)';
+      });
+      modal.querySelector('#enquiry-success-close').addEventListener('mouseleave', function() {
+        this.style.background = 'var(--g1, #0A3D2C)';
+      });
+      // Click outside to close
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          hideSuccessModal();
+        }
+      });
+    }
+
+    // Show
+    document.body.style.overflow = 'hidden'; // prevent scroll behind modal
+    modal.style.pointerEvents = 'auto';
+    modal.style.opacity = '1';
+    setTimeout(() => {
+      modal.querySelector('.modal-card').style.transform = 'translateY(0) scale(1)';
+    }, 10);
+  }
+
+  function hideSuccessModal() {
+    const modal = document.getElementById('enquiry-success-modal');
+    if (modal) {
+      modal.style.opacity = '0';
+      modal.style.pointerEvents = 'none';
+      modal.querySelector('.modal-card').style.transform = 'translateY(20px) scale(0.95)';
+      document.body.style.overflow = ''; // restore scroll
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('contact-page-form');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        showSuccessModal();
+        form.reset();
+      });
+    }
+  });
+})();
