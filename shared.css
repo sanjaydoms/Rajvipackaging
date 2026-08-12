@@ -4947,6 +4947,13 @@ nav a.active {
   justify-content: center
 }
 
+.blog-card-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
 .blog-card-overlay {
   position: absolute;
   inset: 0;
@@ -7717,17 +7724,39 @@ footer {
 }
 
 #page-blogs-all .ba-card-img {
-  aspect-ratio: 16/9;
+  aspect-ratio: 4/3;
   overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #page-blogs-all .ba-card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
   transition: transform .5s cubic-bezier(.4, 0, .2, 1);
+}
+
+/* Landscape images - fill naturally */
+#page-blogs-all .ba-card-img.is-landscape img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Square images - display naturally */
+#page-blogs-all .ba-card-img.is-square img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Portrait images - reduce cropping, show more of the product */
+#page-blogs-all .ba-card-img.is-portrait img {
+  object-fit: contain;
+  object-position: center;
 }
 
 #page-blogs-all .ba-card:hover .ba-card-img img {
